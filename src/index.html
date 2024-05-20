@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="stylesheet.scss">
     
     <title>Resturang namn</title>
@@ -10,11 +15,12 @@
 <body>
 
     <div id="navigation">
+        <h1>No Nonsense Burgers</h1>
     <nav>
         <ul>
-            <li><a href="#pos1">Meny</a></li>
-            <li><a href="#pos2">Reservation</a></li>
-            <li><a href="#pos3">Kontakta oss</a></li>
+            <li><a href="#pos1">Om oss</a></li>
+            <li><a href="#pos2">Meny</a></li>
+            <li><a href="#pos3">Reservation</a></li>
         </ul>
     </nav>
     </div>
@@ -25,30 +31,30 @@
 
     <section id="pos1">
         
-    </section>
+        <div>
+            <h1>Om oss</h1>
+            <p>Vår idé är väldigt simpel, det finns tre saker som gör en bra hamburgarupplevelse. </p>
+            <ul>
+                <h2>Köttet</h2>
+                <p>Vårt kött kommer från en lokal bondgård och är av högsta kvalité, bonden brukar sjölv komma in och äta. Hugg tag i honom och fråga själva om ni inte tror oss!. </p>
+                <h2>Brödet</h2>
+                <p>Brödet är bakat hos oss, det bakas nytt färsk bröd varje dag. Vår bagare har bakat bröd i alla dess former i USA, Italien och frankrike hos flera berömda resturanger.  </p>
+                <h2>Sällskapet</h2>
+                <p>Det är där vi kommer in, vi är et familjeägt burgarhak i riktig enkelt stil. Hos oss kan ni äta goda burgare, 
+                    umgås med vänner, hänga i baren eller varför inte spela lite biljard. </p>
+            </ul>
+            <p>Alla är välkommna att njuta av en burgare som den ska vara, simpel och utan konstigheter.  </p>
+        </div>
+    </section>  
 
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
 
     <section id="pos2">
-        <div id="divForm">
-            <h2>Boka bord</h2>
-        <div id="messageErr"></div>
-            <form id="form">
-                <label for="email"> E-postadress:</label>
-                <input type="text" id="emailID" class="inputAll" name="email" required>
-    
-                <label for="firstname"> Förnamn:</label>
-                <input type="text" id="firstnameID" class="inputAll" name="firstname" required>
-    
-    
-                <label for="lastname"> Efternamn:</label>
-                <input type="text" id="lastnameID" class="inputAll" name="lastname" required>
-    
-                <button id="resButton" type="submit" > Reservera</button>
-            </form>
-        </div>
+        
+
+        
     </section>
 
  <!----------------------------------------------------------------------------->
@@ -56,9 +62,39 @@
 <!----------------------------------------------------------------------------->
 
     <section id="pos3">
+
+        <div id="grid2x1">
+            
+            <div id="gridItem1">
+                <h2>Boka bord</h2>
+            <div id="messageErr"></div>
+                <form id="form">
+                    <label for="email"> E-postadress:</label>
+                    <input type="text" id="emailID" class="inputAll" name="email" required>
         
+                    <label for="firstname"> Förnamn:</label>
+                    <input type="text" id="firstnameID" class="inputAll" name="firstname" required>
+        
+        
+                    <label for="lastname"> Efternamn:</label>
+                    <input type="text" id="lastnameID" class="inputAll" name="lastname" required>
+        
+                    <button id="resButton" type="submit" > Reservera</button>
+                </form>
+            </div>
+
+            <div id="gridItem2">
+
+            </div>
+
+        </div>
+        
+
     </section>
 
+    <footer>
+        <p>No Nonsense Burgers (trademark)</p>
+    </footer>
     
     <script src="main.js"></script>
 </body>

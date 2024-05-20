@@ -1,4 +1,142 @@
+#navigation {
+  background-color: #000;
+  background-image: url("normalBurgetBlack.d1db3813.jpg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 40vh;
+}
+
+#navigation h1 {
+  color: #000;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+}
+
 #navigation li {
+  margin-top: 8vh;
+  margin-right: 2vw;
   display: inline-block;
+}
+
+#navigation a {
+  color: #000;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  font-size: 140%;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#navigation a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  height: 3vh;
+}
+
+footer p {
+  color: #000;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  text-align: center;
+}
+
+body {
+  background-color: #000;
+  margin-left: -1vw;
+  font-family: Pacifico, cursive, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  overflow-x: hidden;
+}
+
+#pos1 {
+  color: #fff;
+  background-color: #000;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+
+#pos1 div {
+  width: 55vw;
+  margin-left: 5vw;
+}
+
+#pos1 div h1 {
+  color: #000;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  text-align: left;
+  text-decoration: underline;
+}
+
+#pos1 div p {
+  width: 40vw;
+}
+
+#pos2 {
+  width: 100vw;
+  position: relative;
+}
+
+#pos3 {
+  z-index: -1;
+  background-color: #000;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #fff;
+  width: 100vw;
+  height: 40vh;
+  position: relative;
+}
+
+#pos3 #grid2x1 {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+#pos3 #gridItem1 {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  margin: auto;
+}
+
+#pos3 #gridItem1 form {
+  flex-direction: column;
+  margin: auto;
+  display: flex;
+}
+
+#pos3 #gridItem1 label {
+  text-align: left;
+  font-size: 130%;
+}
+
+#pos3 #gridItem1 input {
+  width: 35vw;
+  height: 5vh;
+  margin: auto auto 1vh;
+}
+
+#pos3 #gridItem1 button {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  width: fit-content;
+  height: 5vh;
+  font-weight: 900;
+}
+
+#pos3 #gridItem2 {
+  width: fit-content;
+  display: block;
 }
 /*# sourceMappingURL=index.ff312cca.css.map */

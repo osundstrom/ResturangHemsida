@@ -1,9 +1,39 @@
 #navigation{
-    ul {
-        
+    background-image: url(bilder/normalBurgetBlack.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 100vw;
+    background-position: right;
+    background-color: black;
+    height: 40vh;
+    
+    
+
+    h1{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+        position: relative;
+        text-align: center;
+
     }
+
 
     li{
         display: inline-block;
+        margin-right: 2vw;
+        margin-top: 8vh;
+    }
+
+    a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 140%;
+        text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+    }
+
+    a:hover{
+        text-decoration: underline;
     }
 }
