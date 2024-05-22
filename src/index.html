@@ -6,21 +6,26 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b12854771.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="stylesheet.scss">
-    
-    <title>Resturang namn</title>
+    <link rel="icon" type="image/x-icon" href="/src/bilder/favicon.png">
+    <title>NoNonsense</title>
 </head>
 <body>
+    <div id="admin">
+       <a href="admin.html"><i class="fa-solid fa-lock"></i></a>
+    </div>
 
     <div id="navigation">
         <h1>No Nonsense Burgers</h1>
     <nav>
         <ul>
-            <li><a href="#pos1">Om oss</a></li>
-            <li><a href="#pos2">Meny</a></li>
-            <li><a href="#pos3">Reservation</a></li>
+            <li><a href="#pos5"> <i class="fa-regular fa-address-book"></i> Kontakt</a></li>
+            <li><a href="#pos2"> <i class="fa-solid fa-book-open"></i> Meny</a></li>
+            <li><a href="#pos3"> <i class="fa-regular fa-pen-to-square"></i> Reservation </a></li>
         </ul>
     </nav>
     </div>
@@ -30,21 +35,24 @@
 <!----------------------------------------------------------------------------->
 
     <section id="pos1">
-        
         <div>
-            <h1>Om oss</h1>
-            <p>Vår idé är väldigt simpel, det finns tre saker som gör en bra hamburgarupplevelse. </p>
+            
+            <h1>Det finns tre saker som gör en bra hamburgarupplevelse.</h1>
             <ul>
-                <h2>Köttet</h2>
-                <p>Vårt kött kommer från en lokal bondgård och är av högsta kvalité, bonden brukar sjölv komma in och äta. Hugg tag i honom och fråga själva om ni inte tror oss!. </p>
-                <h2>Brödet</h2>
-                <p>Brödet är bakat hos oss, det bakas nytt färsk bröd varje dag. Vår bagare har bakat bröd i alla dess former i USA, Italien och frankrike hos flera berömda resturanger.  </p>
-                <h2>Sällskapet</h2>
-                <p>Det är där vi kommer in, vi är et familjeägt burgarhak i riktig enkelt stil. Hos oss kan ni äta goda burgare, 
-                    umgås med vänner, hänga i baren eller varför inte spela lite biljard. </p>
+                <li><h2>Köttet</h2>Vårt kött kommer från en lokal bondgård och är av högsta kvalité , 
+                    bonden brukar sjölv komma in och äta. Hugg tag i 
+                    honom och fråga själva om ni inte tror oss! </li>
+                
+                <li><h2>Brödet</h2> Brödet är bakat hos oss, det bakas nytt färsk bröd varje dag. Vår bagare har bakat bröd i alla dess former i Usa, Italien och frankrike hos flera berömda resturanger.  </li>
+                
+                <li><h2>Miljön</h2>Det är där vi kommer in, vi är et familjeägt burgarhak i riktig enkelt stil. Hos oss kan ni äta goda burgare, 
+                    umgås med vänner, hänga i baren eller varför inte spela lite biljard. </li>
             </ul>
+
             <p>Alla är välkommna att njuta av en burgare som den ska vara, simpel och utan konstigheter.  </p>
+
         </div>
+
     </section>  
 
 <!----------------------------------------------------------------------------->
@@ -52,8 +60,25 @@
 <!----------------------------------------------------------------------------->
 
     <section id="pos2">
-        
 
+        <div id="grid2x2">
+            <div id="gridItem">
+                <h2>Hamburgare  -  Kött</h2>
+
+            </div>
+            <div id="gridItem">
+                <h2>Hamburgare  -  Vegetarisk</h2>
+                
+            </div>
+            <div id="gridItem">
+                <h2>Dryck  -  Alkoholfri</h2>
+                
+            </div>
+            <div id="gridItem">
+                <h2>Dryck  -  Alkohol</h2>
+                
+            </div>
+        </div>
         
     </section>
 
@@ -63,15 +88,17 @@
 
     <section id="pos3">
 
-        <div id="grid2x1">
-            
-            <div id="gridItem1">
-                <h2>Boka bord</h2>
+        <div id="divForm">
+            <h2>Boka bord</h2>
             <div id="messageErr"></div>
                 <form id="form">
                     <label for="email"> E-postadress:</label>
                     <input type="text" id="emailID" class="inputAll" name="email" required>
+                    
+                    <label for="phone"> Telefon:</label>
+                    <input type="text" id="phoneID" class="inputAll" name="phone" required>
         
+
                     <label for="firstname"> Förnamn:</label>
                     <input type="text" id="firstnameID" class="inputAll" name="firstname" required>
         
@@ -81,19 +108,71 @@
         
                     <button id="resButton" type="submit" > Reservera</button>
                 </form>
+        </div>
+                
+            
+        
+    </section>
+
+
+    <section id="pos4">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29582.825725487863!2d17.26457974889522!3d62.39255216553995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46645df40bcf4d73%3A0x2a889fbce18e874a!2sMittuniversitetet%20Sundsvall!5e0!3m2!1ssv!2sse!4v1716327707187!5m2!1ssv!2sse" width="100" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </section>
+
+
+    <section id="pos5">
+        
+        <div id="grid2x1">
+            
+            <div id="gridItem1">
+                <h2>Kontakta oss</h2>
+
+                <ul>
+                    <li>Telefon: 0770 000 000</li>
+                    <li>Epost: <a href="mailto: Nononsense@burger.se"> Nononsense@burger.se </a></li>
+                </ul>
+
+                <h2>Öppetider</h2>
+
+                <ul>
+                    <li>Mån-Tor: 12-22</li>
+                    <li>Fre-Lör: 14-24</li>
+                    <li>Sön: Stängt</li>
+                </ul>
+
             </div>
 
             <div id="gridItem2">
 
+                <h2>Skicka ett meddelande</h2>
+            
+                <form id="form">
+                    <label for="email"> E-postadress:</label>
+                    <input type="text" id="emailID" class="inputAll" name="email" required>
+                    
+                    <label for="phoneContact"> Telefon:</label>
+                    <input type="text" id="phoneContactID" class="inputAll" name="phoneContact" required>
+
+                    <label for="message"> Meddelande:</label>
+                    <textarea type="text" id="messageID" class="inputAll" name="message" required>
+        
+                    <button id="resButton" type="submit" > Skicka</button>
+                    </form>
             </div>
 
         </div>
+    
         
-
     </section>
 
+
     <footer>
-        <p>No Nonsense Burgers (trademark)</p>
+        <p>No Nonsense Burgers &#xa9;</p>
+        <p><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+        <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+
     </footer>
     
     <script src="main.js"></script>

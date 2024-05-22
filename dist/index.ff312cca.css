@@ -1,24 +1,46 @@
-#navigation {
-  background-color: #000;
-  background-image: url("normalBurgetBlack.d1db3813.jpg");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100vw;
-  height: 40vh;
+#admin {
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
 }
 
-#navigation h1 {
-  color: #000;
-  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+#admin a {
+  color: #fff;
+  font-size: 120%;
+}
+
+#admin a:hover {
+  color: #f4c885;
+}
+
+#navigation {
   text-align: center;
-  text-decoration: none;
+  background-color: #fff;
+  background-image: url("whiteBricks.749609bf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #757575;
+  width: 60vw;
+  height: 20vh;
+  margin: -4vh auto auto;
   position: relative;
 }
 
+#navigation h1 {
+  color: #fff;
+  text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+  text-align: center;
+  font-family: Danfo, serif;
+  font-size: 300%;
+  text-decoration: none;
+  position: relative;
+  top: 5vh;
+}
+
 #navigation li {
-  margin-top: 8vh;
+  margin-top: 5vh;
   margin-right: 2vw;
+  font-size: 90%;
   display: inline-block;
 }
 
@@ -35,13 +57,31 @@
 }
 
 footer {
-  height: 3vh;
+  text-align: center;
+  background-image: url("whiteBricks.749609bf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #757575;
+  width: 102vw;
+  height: 10vh;
+  margin: 5vh auto -2vh;
+  position: relative;
 }
 
 footer p {
   color: #000;
-  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
   text-align: center;
+  margin-right: 5vw;
+  font-weight: 900;
+  display: inline-block;
+}
+
+footer a {
+  color: #000;
+  flex-direction: column;
+  font-weight: 900;
+  text-decoration: none;
+  display: flex;
 }
 
 body {
@@ -53,90 +93,236 @@ body {
 
 #pos1 {
   color: #fff;
+  text-align: center;
   background-color: #000;
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100vw;
-  height: 80vh;
+  width: 60vw;
+  height: fit-content;
+  margin: 5vh auto 2vh;
   position: relative;
 }
 
-#pos1 div {
-  width: 55vw;
-  margin-left: 5vw;
+#pos1 ul {
+  margin: auto;
+  list-style: none;
+  display: inline-block;
 }
 
-#pos1 div h1 {
+#pos1 li {
+  text-align: left;
+  width: 50vw;
+  margin-right: 1vw;
+  font-size: 90%;
+  display: block;
+  position: relative;
+}
+
+#pos1 h1 {
   color: #000;
   text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
-  text-align: left;
+  text-align: center;
   text-decoration: underline;
 }
 
-#pos1 div p {
-  width: 40vw;
+#pos1 h2 {
+  text-align: center;
+  margin-right: 3vw;
+  font-size: 120%;
 }
 
-#pos2 {
+#pos1 p {
+  font-size: 90%;
+}
+
+#pos2 #grid2x2 {
+  grid-template-rows: 2fr;
+  grid-template-columns: 2fr 2fr;
   width: 100vw;
+  margin-top: 8vh;
+  display: grid;
   position: relative;
+}
+
+#pos2 #gridItem {
+  background-color: #fff;
+  border: 1px solid #757575;
+  border-radius: 10px;
+  width: 30vw;
+  height: 35vh;
+  margin: auto auto 10vh;
+}
+
+#pos2 h2 {
+  color: #000;
+  text-align: center;
+  font-size: 110%;
+  text-decoration: underline;
 }
 
 #pos3 {
-  z-index: -1;
+  z-index: 1;
   background-color: #000;
-  background-position: 100%;
+  background-image: url("signburg.753ba2dc.jpg");
+  background-position-x: 80%;
   background-repeat: no-repeat;
-  background-size: cover;
-  border-top: 1px solid #fff;
+  background-size: contain;
   width: 100vw;
-  height: 40vh;
+  height: fit-content;
+  margin-left: 1vw;
   position: relative;
 }
 
-#pos3 #grid2x1 {
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
-  display: grid;
-}
-
-#pos3 #gridItem1 {
+#pos3 h2 {
   color: #fff;
   text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
-  margin: auto;
+  text-align: center;
+  font-size: 180%;
+  text-decoration: underline;
 }
 
-#pos3 #gridItem1 form {
+#pos3 #divForm {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  width: 40vw;
+  margin-left: 5vw;
+}
+
+#pos3 #divForm form {
   flex-direction: column;
   margin: auto;
   display: flex;
+  position: relative;
 }
 
-#pos3 #gridItem1 label {
+#pos3 #divForm label {
   text-align: left;
-  font-size: 130%;
+  text-align: start;
+  margin-left: 2vw;
+  font-size: 120%;
+  position: relative;
 }
 
-#pos3 #gridItem1 input {
+#pos3 #divForm input {
   width: 35vw;
   height: 5vh;
   margin: auto auto 1vh;
 }
 
-#pos3 #gridItem1 button {
+#pos3 #divForm button {
   color: #fff;
   text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
-  background-color: #000;
-  border: 1px solid #fff;
+  background: none;
   border-radius: 10px;
   width: fit-content;
   height: 5vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
   font-weight: 900;
+  position: relative;
+}
+
+#pos3 #divForm button:hover {
+  color: #f4c885;
+  text-decoration: underline;
 }
 
 #pos3 #gridItem2 {
+  background-color: #fff;
   width: fit-content;
   display: block;
+  position: relative;
+}
+
+#pos4 {
+  text-align: center;
+  width: 100vw;
+  height: fit-content;
+  margin: 5vh auto auto;
+  position: relative;
+}
+
+#pos4 iframe {
+  width: 60vw;
+  margin-top: -1vh;
+  margin-left: 1vw;
+}
+
+#pos5 {
+  z-index: 1;
+  background-color: #000;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: fit-content;
+  margin-top: 5vh;
+  margin-left: 1vw;
+  position: relative;
+}
+
+#pos5 #grid2x1 {
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  position: relative;
+}
+
+#pos5 #gridItem1 {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  margin: auto;
+}
+
+#pos5 #gridItem1 a {
+  color: #fff;
+}
+
+#pos5 #gridItem1 a:hover {
+  color: #f4c885;
+}
+
+#pos5 #gridItem2 {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  margin: auto;
+}
+
+#pos5 #gridItem2 form {
+  flex-direction: column;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+
+#pos5 #gridItem2 label {
+  text-align: left;
+  font-size: 130%;
+  position: relative;
+}
+
+#pos5 #gridItem2 input {
+  width: 35vw;
+  margin: auto auto 1vh;
+  font-size: 140%;
+}
+
+#pos5 #gridItem2 textarea {
+  height: 5vh;
+}
+
+#pos5 #gridItem2 button {
+  color: #fff;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+  background-color: #000;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-weight: 900;
+  position: relative;
+}
+
+#pos5 #gridItem2 button:hover {
+  color: #f4c885;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=index.ff312cca.css.map */

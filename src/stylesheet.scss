@@ -6,84 +6,139 @@ body {
     overflow-x: hidden;
     margin-left: -1vw;
     font-family: "Pacifico", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
+
 #pos1{
-    //background-image: url(bilder/firePic.jpg);
-    background-repeat: no-repeat;
-    background-size:contain;
-    width: 100vw;
-    background-position: right;
+    width: 60vw;
     background-color: black;
     color: rgb(255, 255, 255);
-    height: 80vh;
+    height: fit-content;
     position: relative;
+    text-align: center;
+    //border: 1px solid rgb(117, 117, 117);
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
     
 
-    
+        ul{
+            list-style: none;
+            display: inline-block;
+            margin: auto;   
+        }
 
-    div{
-        width: 55vw;
-        margin-left: 5vw;
+        li{
+            display: block;
+            position: relative;
+            margin-right: 1vw;
+            width: 50vw;
+            font-size: 90%;
+            text-align: left;
+            
+        }
+       
         h1{
             color: rgb(0, 0, 0);
             text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
-            text-align: left;
             text-decoration: underline;
+            text-align: center;
         }
+
+        h2{
+            font-size: 120%;
+            margin-right: 3vw;
+            //text-decoration: underline;
+            text-align: center;
+            
+        }
+
         p{
-            width: 40vw;
+            font-size: 90%; 
+            
         }
     }
 
 
-    
-   
-}
 
 
 #pos2{
-    //border-bottom: 1px solid white;
-    width: 100vw;
-    position: relative;
+    #grid2x2{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr; 
+        position: relative;
+        width: 100vw;
+        margin-top: 8vh;
+        
+
+    }
+
+    #gridItem{
+        width: 30vw;
+        height: 35vh;
+        border: 1px solid rgb(117, 117, 117);
+        margin: auto;
+        margin-bottom: 10vh;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 110%;
+        text-decoration: underline;
+    }
+
+    
+    
+    
+
 
 }
 
 
 #pos3{
     width: 100vw;
-    background-position: right;
+    background-position-x: 80%;
     background-color: black;
-    height: 40vh;
+    height: fit-content;
     position: relative;
-    border-top: 1px solid white;
-    //background-image: url(/src/bilder/BurgerOverFire.jpg);
+    background-image: url(bilder/signburg.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:contain;
     position: relative;
-    z-index: -1;
-    
-    
+    z-index: 1;
+    margin-left: 1vw;
 
-    #grid2x1{
-        display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr; 
-            
+    h2{
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+        text-align: center;
+        font-size: 180%;
+        text-decoration: underline;
     }
+    
 
-    #gridItem1 {
-            margin: auto;
+    #divForm {
+            margin-left: 5vw;
+            width: 40vw;
             color: white;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
             form{
                 display: flex;
                 flex-direction: column;
                 margin: auto;
+                position: relative;
             }
             label{
-                font-size: 130%;
+                font-size: 120%;
                 text-align: left;
+                position: relative;
+                text-align:start;
+                margin-left: 2vw;
             }
 
             input {
@@ -95,24 +150,136 @@ body {
 
             button{
                 width: fit-content;
+                position: relative;
                 height: 5vh;
                 font-weight: 900;
-                background-color: #000;
-                border: 1px solid white;
+                background: none;
+                //border: 1px solid rgb(117, 117, 117);
                 border-radius: 10px;
                 color: white;
                 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+                margin-bottom: 1vh;
+                margin-left: 2vw;
+            }        
+
+            button:hover{
+                color: rgb(244, 200, 133);
+                text-decoration: underline;
             }
-             
     }
+
 
     #gridItem2{
         display: block; 
-        //background-color: white;
+        background-color: white;
         width: fit-content;
+        position: relative;
         
         
     }
-    
+
    
 }
+
+
+#pos4{
+    width: 100vw;
+    margin: auto;
+    position: relative;
+    height: fit-content;
+    margin-top: 1vh;
+    //border: 1px solid rgb(117, 117, 117);
+    text-align: center;
+    margin-top: 5vh;
+
+    iframe{
+        width: 60vw;
+        margin-left: 1vw;
+        margin-top: -1vh;
+    }
+
+}
+
+
+
+#pos5{
+    width: 100vw;
+    background-position: right;
+    background-color: black;
+    height: fit-content;
+    position: relative;
+    //background-image: url(/src/bilder/buildaburger.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    margin-left: 1vw;
+    margin-top: 5vh;
+    
+
+    #grid2x1{
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr; 
+            position: relative;
+            
+    }
+
+    #gridItem1{
+        color: white;
+        margin: auto;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+        a{
+            color: white;
+        }
+        a:hover{
+            color: rgb(244, 200, 133);
+        }
+    }
+
+    #gridItem2 {
+            margin: auto;
+            color: white;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+            form{
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                position: relative;
+            }
+            label{
+                font-size: 130%;
+                text-align: left;
+                position: relative;
+            }
+
+            input {
+                margin: auto;
+                margin-bottom: 1vh;
+                width: 35vw;
+                font-size: 140%;
+                
+            }
+
+            textarea{
+                height: 5vh;
+            }
+
+            button{
+                width: fit-content;
+                position: relative;
+                
+                font-weight: 900;
+                background-color: #000;
+                //border: 1px solid rgb(117, 117, 117);
+                border-radius: 10px;
+                color: white;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
+                margin-bottom: 1vh;
+                margin-top: 1vh;
+            } 
+            button:hover{
+                color: rgb(244, 200, 133);
+                text-decoration: underline;
+            }
+    }}

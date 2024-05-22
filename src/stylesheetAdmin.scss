@@ -1,0 +1,37 @@
+@use "partials/navigation";
+@use "partials/footer";
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    margin-left: -1vw;
+    font-family: "Pacifico", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+#pos1{
+   width: 80vw;
+   border: 1px solid white;
+   height: 50vh;
+   margin: auto;
+   margin-top: 5vh;
+}
+
+
+#pos2{   
+    width: 80vw;
+   border: 1px solid white;
+   height: 50vh;
+   margin: auto;
+   margin-top: 5vh;
+}
+
+
+#pos3{
+    width: 80vw;
+   border: 1px solid white;
+   height: 50vh;
+   margin: auto;
+   margin-top: 5vh;
+}
