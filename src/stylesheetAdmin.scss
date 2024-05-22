@@ -35,3 +35,59 @@ body {
    margin: auto;
    margin-top: 5vh;
 }
+
+
+
+//---------------------------------------------------------------//
+//---------------------------------------------------------------//
+//---------------------------------------------------------------//
+//---------------------------------------------------------------//
+
+#specialFooter{
+    position: absolute;
+    bottom: 0;
+}
+
+#divForm{
+    display: block;
+    width: fit-content;
+    background-image: url(/src/bilder/whiteBricks.jpg);
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10vh;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+    form{
+        display:flex;
+        flex-direction: column;
+        width: 40vw;
+        padding-bottom: 5vh;
+        height:fit-content;
+    }
+    input{
+        height: 4vh;
+        font-weight: 600;
+    }
+
+    label{
+        font-weight: 900;
+        margin-top: 1vh;
+    }
+
+    button{
+        width: 15vw;
+        height: 5vh;
+        margin-top: 2vh;
+
+    }
+    h2{
+        text-decoration: underline;
+    }
+
+    button:hover{
+        background-color: orange;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2b12854771.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="stylesheetAdmin.scss">
+    
+    <title>Login</title>
+</head>
+<body>
+    
+    <div id="navigation">
+        <h1>Admin - Login</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"> <i class="fa-solid fa-house"></i>Startsida</a></li>
+            <a href="admin.html">test</a>
+        </ul>
+    </nav>
+    </div>
+
+    <div id="divForm">
+        <h2>Logga in</h2>
+    <div id="messageErr"></div>
+        <form id="form">
+    
+            <label for="usernameLogin"> Användarnamn:</label>
+            <input type="text" id="usernameIDLogin" class="inputAll" name="usernameLogin" required>
+
+
+            <label for="passwordLogin"> Lösenord:</label>
+            <input type="text" id="passwordIDLogin" class="inputAll" name="passwordLogin" required>
+
+            <button id="buttonLogin" type="submit"> Logga in</button>
+        </form>
+    </div>
+
+
+    <footer id="specialFooter">
+        <p>No Nonsense Burgers &#xa9;</p>
+        <p><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
+        <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
+
+    </footer>
+    
+    <script src="login.js"></script>
+    
+</body>
+</html>
