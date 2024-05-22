@@ -63,7 +63,7 @@ footer {
   background-size: cover;
   border-top: 1px solid #757575;
   width: 102vw;
-  height: 10vh;
+  height: 8vh;
   margin: 5vh auto -2vh;
   position: relative;
 }
@@ -71,6 +71,7 @@ footer {
 footer p {
   color: #000;
   text-align: center;
+  text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
   margin-right: 5vw;
   font-weight: 900;
   display: inline-block;
@@ -78,10 +79,15 @@ footer p {
 
 footer a {
   color: #000;
-  flex-direction: column;
+  text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
   font-weight: 900;
   text-decoration: none;
-  display: flex;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #f90;
+  text-decoration: underline;
 }
 
 body {
