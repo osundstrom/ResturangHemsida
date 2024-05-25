@@ -1,0 +1,103 @@
+
+#pos2{
+    h2{text-align: center;
+        text-decoration: underline;
+        color: orange;
+    }
+    #matDiv{
+        color: black;
+        z-index: 1;
+        width:fit-content;
+        display: inline-block;
+        //flex-direction: row;
+    }
+
+    #dryckDiv {
+        color: black;
+        z-index: 1;
+        
+        width:fit-content;
+        display:inline-block;
+        
+    }
+    
+    ul{
+        list-style: none;
+        display: inline-block;
+        margin: auto;
+        align-items: center;
+        padding: 2%;
+        border: 1px solid white;
+        border-radius: 10px;
+        width:30vw;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        background-color: white;
+        
+
+        li{
+            width: fit-content;
+            
+            
+        }
+        button{
+            width: fit-content;
+            margin-left: 2vw;
+        }
+        button:hover {
+            background-color: orange;;
+        }
+    }
+
+   
+    #formAdmin{
+        width: 30vw;
+        input{
+        
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            //border: 1px solid white;
+            height: 3vh;
+            width:60vw;
+            margin-top: 1vh;
+    
+        }
+    
+        label{
+            margin-top: 1vh;
+        }
+    
+        textarea{
+            display: flex;
+            flex-direction: column;
+            width:60vw;
+            height: 5vh;
+    
+        }
+    
+        select {
+            display: inline-block;
+            padding: 2%;
+            font-weight: 900;
+            option{
+                font-weight: 900;
+            }
+        }
+        button{
+            
+            display: inline-block;
+            margin-top: 2vh;
+            padding: 2%;
+            font-weight: 900;
+            position: relative;
+        }
+        button:hover {
+            background-color: orange;;
+        }
+    }
+
+}
+   

@@ -6,14 +6,18 @@ body {
     overflow-x: hidden;
     margin-left: -1vw;
     font-family: "Pacifico", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    font-family: "Poetsen One", sans-serif;
 }
 
 
 #pos1{
-    width: 60vw;
+    width: 100vw;
     background-color: black;
+    background-image: url(/src/bilder/signburg.jpg);
+    background-repeat: no-repeat;
+    background-position: 5%;
     color: rgb(255, 255, 255);
+    background-size: contain;
     height: fit-content;
     position: relative;
     text-align: center;
@@ -76,8 +80,8 @@ body {
     }
 
     #gridItem{
-        width: 30vw;
-        height: 35vh;
+        width: 40vw;
+        height: fit-content;
         border: 1px solid rgb(117, 117, 117);
         margin: auto;
         margin-bottom: 10vh;
@@ -90,7 +94,14 @@ body {
         text-align: center;
         font-size: 110%;
         text-decoration: underline;
+        text-Shadow: -1px -1px 0 #f4c885, 1px -1px 0 #f4c885, -1px  1px 0 #f4c885, 1px  1px 0 #f4c885;
+
     }
+
+    ul{
+        list-style: none;
+    }
+    
 
     
     
@@ -163,7 +174,7 @@ body {
             }        
 
             button:hover{
-                color: rgb(244, 200, 133);
+                color: #f4c885;
                 text-decoration: underline;
             }
     }
@@ -193,7 +204,7 @@ body {
     margin-top: 5vh;
 
     iframe{
-        width: 60vw;
+        width: 100vw;
         margin-left: 1vw;
         margin-top: -1vh;
     }

@@ -7,16 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Danfo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&family=Poetsen+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Oswald&family=Pacifico&family=Roboto+Mono:wght@100&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2b12854771.js" crossorigin="anonymous"></script>
-
+    
     <link rel="stylesheet" href="/login.3b8dadd9.css">
     
     <title>Admin</title>
 </head>
 <body>
     <div id="admin">
-       <a href="/index.html"><i class="fa-solid fa-lock-open"></i>Logga ut</a>
+       <a onclick="deleteToken()" href="/index.html"><i class="fa-solid fa-lock-open"></i>Logga ut</a>
     </div>
 
     <div id="navigation">
@@ -45,6 +46,42 @@
 
     <section id="pos2">
 
+        <div id="divAdminForm">
+            <h2>Lägg till</h2>
+            <form id="formAdmin">
+    
+                <label for="name"> Namn:</label>
+                <input type="text" id="nameID" class="inputAll" name="name" required="">
+    
+    
+                <label for="price"> Pris:</label>
+                <input type="text" id="priceID" class="inputAll" name="price" required="">
+
+                <label for="description"> Beskrivning:</label>
+                <textarea type="text" id="descriptionID" class="inputAll" name="description" required=""></textarea>
+                
+                <label for="type">Typ:</label>
+                <select name="type" id="typeID" class="inputAll" required="">
+                    <option value="choose">Välj här</option>
+                    <option value="Dryck">Dryck</option>
+                    <option value="Mat">Mat</option>
+                </select>
+                
+                
+
+                <button id="buttonMeny" type="submit"> Lägg till</button>
+            </form>
+        </div>
+        
+        <h2>Mat</h2>
+        <div id="matDiv">
+            
+        </div>
+        <h2>Dryck</h2>
+        <div id="dryckDiv">
+            
+            
+        </div>
 
         
     </section>

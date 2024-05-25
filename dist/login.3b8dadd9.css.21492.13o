@@ -1,0 +1,257 @@
+#admin {
+  z-index: 1;
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
+}
+
+#admin a {
+  color: #000;
+  font-size: 120%;
+}
+
+#admin a:hover {
+  color: #f4c885;
+}
+
+#navigation {
+  text-align: center;
+  background-color: #fff;
+  background-image: url("whiteBricks.749609bf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid #757575;
+  width: 101vw;
+  height: 20vh;
+  margin: -4vh auto auto;
+  position: relative;
+}
+
+#navigation h1 {
+  color: #fff;
+  text-shadow: -2px -2px #000, 2px -2px #000, -2px 2px #000, 2px 2px #000;
+  text-align: center;
+  font-family: Danfo, serif;
+  font-size: 300%;
+  text-decoration: none;
+  position: relative;
+  top: 5vh;
+}
+
+#navigation li {
+  margin-top: 5vh;
+  margin-right: 2vw;
+  font-size: 90%;
+  display: inline-block;
+}
+
+#navigation a {
+  color: #000;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  font-size: 140%;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+#navigation a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-image: url("whiteBricks.749609bf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #757575;
+  width: 102vw;
+  height: 8vh;
+  margin: 5vh auto -2vh;
+  position: relative;
+}
+
+footer p {
+  color: #000;
+  text-align: center;
+  text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
+  margin-right: 5vw;
+  font-weight: 900;
+  display: inline-block;
+}
+
+footer a {
+  color: #000;
+  text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer a:hover {
+  color: #f90;
+  text-decoration: underline;
+}
+
+#pos2 h2 {
+  text-align: center;
+  color: orange;
+  text-decoration: underline;
+}
+
+#pos2 #matDiv, #pos2 #dryckDiv {
+  color: #000;
+  z-index: 1;
+  width: fit-content;
+  display: inline-block;
+}
+
+#pos2 ul {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  align-items: center;
+  width: 30vw;
+  margin: 2vh auto 2vh 5vw;
+  padding: 2%;
+  list-style: none;
+  display: inline-block;
+}
+
+#pos2 ul li {
+  width: fit-content;
+}
+
+#pos2 ul button {
+  width: fit-content;
+  margin-left: 2vw;
+}
+
+#pos2 ul button:hover {
+  background-color: orange;
+}
+
+#pos2 #formAdmin {
+  width: 30vw;
+}
+
+#pos2 #formAdmin input {
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height: 3vh;
+  margin: 1vh auto auto;
+  display: flex;
+}
+
+#pos2 #formAdmin label {
+  margin-top: 1vh;
+}
+
+#pos2 #formAdmin textarea {
+  flex-direction: column;
+  width: 60vw;
+  height: 5vh;
+  display: flex;
+}
+
+#pos2 #formAdmin select {
+  padding: 2%;
+  font-weight: 900;
+  display: inline-block;
+}
+
+#pos2 #formAdmin select option {
+  font-weight: 900;
+}
+
+#pos2 #formAdmin button {
+  margin-top: 2vh;
+  padding: 2%;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+
+#pos2 #formAdmin button:hover {
+  background-color: orange;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+  margin-left: -1vw;
+  font-family: Pacifico, cursive, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  overflow-x: hidden;
+}
+
+#pos1, #pos2, #pos3 {
+  border: 1px solid #fff;
+  width: 80vw;
+  height: fit-content;
+  margin: 5vh auto auto;
+  position: relative;
+}
+
+#specialFooter {
+  position: absolute;
+  bottom: 0;
+}
+
+#divForm {
+  color: #000;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  background-image: url("whiteBricks.749609bf.jpg");
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 10vh auto auto;
+  padding: 2%;
+  display: block;
+}
+
+#divForm form {
+  flex-direction: column;
+  width: 40vw;
+  height: fit-content;
+  padding-bottom: 5vh;
+  display: flex;
+}
+
+#divForm input {
+  height: 4vh;
+  font-weight: 600;
+}
+
+#divForm label {
+  margin-top: 1vh;
+  font-weight: 900;
+}
+
+#divForm button {
+  width: 15vw;
+  height: 5vh;
+  margin-top: 2vh;
+}
+
+#divForm h2 {
+  text-decoration: underline;
+}
+
+#divForm button:hover {
+  background-color: orange;
+  text-decoration: underline;
+}
+
+#divAdminForm {
+  width: fit-content;
+  margin: 1vh auto;
+  padding: 3%;
+}
+
+#divAdminForm #formAdmin {
+  width: fit-content;
+}
+
+#divAdminForm h2 {
+  text-align: center;
+}
+/*# sourceMappingURL=login.3b8dadd9.css.map */

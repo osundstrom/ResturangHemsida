@@ -1,5 +1,7 @@
 
-let url = "https://projektdt207.onrender.com/api" // url
+//let url = "https://projektdt207.onrender.com/api" // url
+
+let url = "http://localhost:3000/api"
 
 //----------------logga in användare--------------------------------//
 

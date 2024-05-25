@@ -1,11 +1,12 @@
 #admin {
+  z-index: 1;
   position: absolute;
   top: 1vh;
   right: 2vw;
 }
 
 #admin a {
-  color: #fff;
+  color: #000;
   font-size: 120%;
 }
 
@@ -20,7 +21,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid #757575;
-  width: 60vw;
+  width: 101vw;
   height: 20vh;
   margin: -4vh auto auto;
   position: relative;
@@ -90,18 +91,104 @@ footer a:hover {
   text-decoration: underline;
 }
 
+#pos2 h2 {
+  text-align: center;
+  color: orange;
+  text-decoration: underline;
+}
+
+#pos2 #matDiv, #pos2 #dryckDiv {
+  color: #000;
+  z-index: 1;
+  width: fit-content;
+  display: inline-block;
+}
+
+#pos2 ul {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  align-items: center;
+  width: 30vw;
+  margin: 2vh auto 2vh 5vw;
+  padding: 2%;
+  list-style: none;
+  display: inline-block;
+}
+
+#pos2 ul li {
+  width: fit-content;
+}
+
+#pos2 ul button {
+  width: fit-content;
+  margin-left: 2vw;
+}
+
+#pos2 ul button:hover {
+  background-color: orange;
+}
+
+#pos2 #formAdmin {
+  width: 30vw;
+}
+
+#pos2 #formAdmin input {
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  height: 3vh;
+  margin: 1vh auto auto;
+  display: flex;
+}
+
+#pos2 #formAdmin label {
+  margin-top: 1vh;
+}
+
+#pos2 #formAdmin textarea {
+  flex-direction: column;
+  width: 60vw;
+  height: 5vh;
+  display: flex;
+}
+
+#pos2 #formAdmin select {
+  padding: 2%;
+  font-weight: 900;
+  display: inline-block;
+}
+
+#pos2 #formAdmin select option {
+  font-weight: 900;
+}
+
+#pos2 #formAdmin button {
+  margin-top: 2vh;
+  padding: 2%;
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+
+#pos2 #formAdmin button:hover {
+  background-color: orange;
+}
+
 body {
+  color: #fff;
   background-color: #000;
   margin-left: -1vw;
-  font-family: Pacifico, cursive, Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  font-family: Poetsen One, sans-serif;
   overflow-x: hidden;
 }
 
 #pos1, #pos2, #pos3 {
   border: 1px solid #fff;
   width: 80vw;
-  height: 50vh;
+  height: fit-content;
   margin: 5vh auto auto;
+  position: relative;
 }
 
 #specialFooter {
@@ -152,5 +239,19 @@ body {
 #divForm button:hover {
   background-color: orange;
   text-decoration: underline;
+}
+
+#divAdminForm {
+  width: fit-content;
+  margin: 1vh auto;
+  padding: 3%;
+}
+
+#divAdminForm #formAdmin {
+  width: fit-content;
+}
+
+#divAdminForm h2 {
+  text-align: center;
 }
 /*# sourceMappingURL=login.3b8dadd9.css.map */
