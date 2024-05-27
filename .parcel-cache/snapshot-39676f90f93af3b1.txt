@@ -30,7 +30,7 @@
 57C:\ResturangHemsida\node_modules\abortcontroller-polyfill133606297013645775 1
 64C:\ResturangHemsida\node_modules\caniuse-lite\data\regions\VI.js133606297036169743 0
 78C:\ResturangHemsida\node_modules\@parcel\runtime-browser-hmr\src\HMRRuntime.js133606297011390374 0
-24C:\ResturangHemsida\dist133612979376970757 1
+24C:\ResturangHemsida\dist133612981221726081 1
 56C:\ResturangHemsida\node_modules\escalade\dist\index.mjs133606297010980320 0
 55C:\ResturangHemsida\node_modules\@parcel\transformer-js133606297011270378 1
 90C:\ResturangHemsida\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mtest5.c133606297020982078 0
@@ -39,7 +39,7 @@
 60C:\ResturangHemsida\node_modules\cosmiconfig\dist\loaders.js133606297012680624 0
 63C:\ResturangHemsida\node_modules\@swc\helpers\cjs\_ts_param.cjs133606297021697191 0
 56C:\ResturangHemsida\node_modules\source-map\package.json133606297006017982 0
-34C:\ResturangHemsida\src\admin.html133612978691655391 0
+34C:\ResturangHemsida\src\admin.html133612981219912414 0
 53C:\ResturangHemsida\dist\ResturangHemsida.59712999.js133612979376720712 0
 85C:\ResturangHemsida\node_modules\@swc\helpers\_\_class_private_field_get\package.json133606297026803083 0
 67C:\ResturangHemsida\node_modules\@parcel\core\src\serializerCore.js133606297024682728 0
@@ -137,7 +137,6 @@
 76C:\ResturangHemsida\node_modules\caniuse-lite\data\features\pad-start-end.js133606297033944318 0
 61C:\ResturangHemsida\node_modules\@parcel\workers\lib\child.js133606297011140355 0
 64C:\ResturangHemsida\node_modules\css-select\lib\esm\compile.d.ts133606297020877050 0
-35C:\ResturangHemsida\dist\admin.html133612979376890721 0
 66C:\ResturangHemsida\node_modules\@parcel\core\test\fixtures\config133606297012855652 1
 58C:\ResturangHemsida\node_modules\@parcel\core\package.json133606297025847923 0
 101C:\ResturangHemsida\node_modules\@parcel\optimizer-htmlnano\node_modules\css-select\lib\sort.d.ts.map133606297015596135 0
@@ -6056,3 +6055,4 @@
 46C:\ResturangHemsida\node_modules\.bin\svgo.cmd133606297037990042 0
 60C:\ResturangHemsida\node_modules\.bin\update-browserslist-db133606297037995041 0
 64C:\ResturangHemsida\node_modules\.bin\update-browserslist-db.ps1133606297037990042 0
+35C:\ResturangHemsida\dist\admin.html133612981221716084 0
