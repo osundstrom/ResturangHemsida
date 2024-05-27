@@ -1,12 +1,12 @@
 footer {
-    height: 8vh;
+    height: 9vh;
     border-top: 1px solid rgb(117, 117, 117);
     position: relative;
     margin: auto;
     width: 102vw;
     text-align: center;
     margin-top: 5vh;
-    margin-bottom: -2vh;
+    margin-bottom: -3vh;
     background-image: url(bilder/whiteBricks.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -25,6 +25,7 @@ footer {
         text-decoration: none;
         display: inline-block;
         font-weight: 900;
+        font-size: x-large;
     }
 
     a:hover{

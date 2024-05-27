@@ -103,6 +103,23 @@
         
     }
 }
+}
+
+@media (max-width:400px) { 
+    #navigation {
+        h1{
+            font-size: 160%;
+            margin-left: -2vw;
+        }
+        ul{
+            margin-left: -4vw;
+        }
+    
+        a{
+            font-size: 100%;
+            
+        }
+    }
 
     
 }

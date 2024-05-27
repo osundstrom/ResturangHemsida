@@ -93,6 +93,21 @@
   }
 }
 
+@media (width <= 400px) {
+  #navigation h1 {
+    margin-left: -2vw;
+    font-size: 160%;
+  }
+
+  #navigation ul {
+    margin-left: -4vw;
+  }
+
+  #navigation a {
+    font-size: 100%;
+  }
+}
+
 footer {
   text-align: center;
   background-image: url("whiteBricks.749609bf.jpg");
@@ -100,8 +115,8 @@ footer {
   background-size: cover;
   border-top: 1px solid #757575;
   width: 102vw;
-  height: 8vh;
-  margin: 5vh auto -2vh;
+  height: 9vh;
+  margin: 5vh auto -3vh;
   position: relative;
 }
 
@@ -117,6 +132,7 @@ footer p {
 footer a {
   color: #000;
   text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
+  font-size: x-large;
   font-weight: 900;
   text-decoration: none;
   display: inline-block;
