@@ -1,7 +1,8 @@
-let url = "https://projektdt207-1.onrender.com/api";
+let url = "https://projektdt207-1.onrender.com/api"; //sätter url till render länk
 //let url = "http://localhost:3000/api"
 function deleteToken() {
-    localStorage.removeItem("token");
+    console.log("deletedToken");
+    localStorage.removeItem("token"); //radera token
 }
 function getToken() {
     return localStorage.getItem("token") // returnerar token
@@ -18,7 +19,7 @@ async function getAll() {
     try {
         if (!token || token == null) {
             console.error("Ingen token finns"); //skrivs ut
-            //window.location.href = "login.html";//om ej token till login
+            window.location.href = "login.html"; //om ej token till login
             return;
         } else {
             const response = await fetch(url + "/secret", {
@@ -30,27 +31,27 @@ async function getAll() {
             if (!response) {
                 console.log("IF1");
                 console.error("Kunde ej h\xe4mta data"); //skrivs ut
-                //window.location.href = "login.html"; //om ej ok response till login
+                window.location.href = "login.html"; //om ej ok response till login
                 return;
             }
-            let matDiv = document.getElementById("matDiv");
-            let dryckDiv = document.getElementById("dryckDiv");
-            let data = await response.json();
-            matDiv.innerHTML = "";
-            dryckDiv.innerHTML = "";
-            console.log("IF2");
+            let matDiv = document.getElementById("matDiv"); //hämtar element
+            let dryckDiv = document.getElementById("dryckDiv"); //hämtar element
+            let data = await response.json(); // sätter data 
+            matDiv.innerHTML = ""; //rensar
+            dryckDiv.innerHTML = ""; //rensar
+            //console.log("IF2")
             data.forEach((item)=>{
                 console.log("loop");
-                const ItemDiv = document.createElement("ul");
-                const typeLi = document.createElement("li");
+                const ItemDiv = document.createElement("ul"); //skapar UL
+                const typeLi = document.createElement("li"); //skapar LI och sätter innehåll
                 typeLi.textContent = item.type;
-                const priceLi = document.createElement("li");
+                const priceLi = document.createElement("li"); //skapar LI och sätter innehåll
                 priceLi.textContent = "Pris: " + item.price;
-                const nameLi = document.createElement("li");
+                const nameLi = document.createElement("li"); //skapar LI och sätter innehåll
                 nameLi.textContent = "Namn: " + item.name;
-                const descriptionLi = document.createElement("li");
+                const descriptionLi = document.createElement("li"); //skapar LI och sätter innehåll
                 descriptionLi.textContent = "Beskrivning: " + item.description;
-                const deleteButton = document.createElement("button");
+                const deleteButton = document.createElement("button"); //skapar button och sätter innehåll
                 deleteButton.textContent = "Radera";
                 deleteButton.addEventListener("click", async ()=>{
                     try {
@@ -61,32 +62,32 @@ async function getAll() {
                                 "Content-Type": "application/json"
                             }
                         });
-                        ItemDiv.remove();
+                        ItemDiv.remove(); //tar bort
                     } catch (error) {
                         console.error(error);
                     }
                 });
-                const changeButton = document.createElement("button");
+                const changeButton = document.createElement("button"); //skapar knapp o sätter innehåll
                 changeButton.textContent = "\xc4ndra";
                 changeButton.addEventListener("click", async ()=>{
-                    const nameInput = document.createElement("input");
+                    const nameInput = document.createElement("input"); //skapar en input sätter placeholder om man raderar innehåll. 
                     nameInput.value = item.name;
                     nameInput.placeholder = "Namn";
-                    const descriptionInput = document.createElement("input");
+                    const descriptionInput = document.createElement("input"); //skapar en input sätter placeholder om man raderar innehåll. 
                     descriptionInput.value = item.description;
                     descriptionInput.placeholder = "Beskrivning";
-                    const priceInput = document.createElement("input");
+                    const priceInput = document.createElement("input"); //skapar en input sätter placeholder om man raderar innehåll. 
                     priceInput.value = item.price;
                     priceInput.placeholder = "Pris";
-                    nameLi.replaceWith(nameInput);
-                    descriptionLi.replaceWith(descriptionInput);
-                    priceLi.replaceWith(priceInput);
-                    changeButton.replaceWith(saveButton);
+                    nameLi.replaceWith(nameInput); //ersätter tidigare 
+                    descriptionLi.replaceWith(descriptionInput); //ersätter tidigare 
+                    priceLi.replaceWith(priceInput); //ersätter tidigare 
+                    changeButton.replaceWith(saveButton); //chnage blir sparaknapp. 
                     saveButton.addEventListener("click", async ()=>{
                         try {
-                            const uppName = nameInput.value;
-                            const uppDescription = descriptionInput.value;
-                            const uppPrice = parseFloat(priceInput.value);
+                            const uppName = nameInput.value; //sätter till inputs värde.
+                            const uppDescription = descriptionInput.value; //sätter till inputs värde.
+                            const uppPrice = parseFloat(priceInput.value); //gör om string till nummer
                             const uppData = {
                                 name: uppName,
                                 description: uppDescription,
@@ -98,33 +99,36 @@ async function getAll() {
                                     "Authorization": "Bearer " + token,
                                     "Content-Type": "application/json"
                                 },
-                                body: JSON.stringify(uppData)
+                                body: JSON.stringify(uppData) //till string 
                             });
-                            nameInput.replaceWith(nameLi);
-                            descriptionInput.replaceWith(descriptionLi);
-                            priceInput.replaceWith(priceLi);
-                            saveButton.replaceWith(changeButton);
+                            nameInput.replaceWith(nameLi); //ersätter
+                            descriptionInput.replaceWith(descriptionLi); //ersätter
+                            priceInput.replaceWith(priceLi); //ersätter
+                            saveButton.replaceWith(changeButton); //ersätter
                         } catch (error) {
                             console.error(error);
                         }
-                        getAll();
+                        getAll(); //kör get all så de uppdateras
                     });
                 });
-                const saveButton = document.createElement("button");
+                const saveButton = document.createElement("button"); //skapr knapp samt sätter innehåll
                 saveButton.textContent = "Spara";
                 //ItemDiv.appendChild(typeLi);
+                //lägger till allt i itemDiv
                 ItemDiv.appendChild(nameLi);
                 ItemDiv.appendChild(priceLi);
                 ItemDiv.appendChild(descriptionLi);
                 ItemDiv.appendChild(deleteButton);
                 ItemDiv.appendChild(changeButton);
+                //om item.-type är Mat eller annat i detta fallet dryck då. 
                 if (item.type === "Mat") matDiv.appendChild(ItemDiv);
                 else dryckDiv.appendChild(ItemDiv);
             });
-            const buttonMeny = document.getElementById("buttonMeny");
+            const buttonMeny = document.getElementById("buttonMeny"); //hämtar element
             const formAdmin = document.getElementById("formAdmin");
             buttonMeny.addEventListener("click", async ()=>{
-                const token = getToken();
+                const token = getToken(); //hmtar token
+                //hämtar alla elements values
                 let nameItem = document.getElementById("nameID").value;
                 let priceItem = document.getElementById("priceID").value;
                 let descriptionItem = document.getElementById("descriptionID").value;
@@ -142,16 +146,16 @@ async function getAll() {
                             "Authorization": "Bearer " + token,
                             "Content-Type": "application/json"
                         },
-                        body: JSON.stringify(itemData)
+                        body: JSON.stringify(itemData) //till string
                     });
-                    if (!response.ok) console.log("failed", response.statusText);
+                    if (!response.ok) console.log("failed");
                     else console.log("added");
                 //formAdmin.reset();
                 } catch (error) {
                     console.error("Error:", error.message);
                 }
             });
-            getBook();
+            getBook(); //kör getBook
             async function getBook() {
                 try {
                     const response = await fetch(url + "/booking", {
@@ -161,17 +165,17 @@ async function getAll() {
                             "Content-Type": "application/json"
                         }
                     });
-                    const data = await response.json();
-                    const bookTable = document.getElementById("bookTableDiv");
+                    const data = await response.json(); //sätter data
+                    const bookTable = document.getElementById("bookTableDiv"); //hämtar element
                     data.forEach((booking)=>{
-                        const bookUl = document.createElement("ul");
-                        const emailLI = document.createElement("li");
+                        const bookUl = document.createElement("ul"); //skapar UL
+                        const emailLI = document.createElement("li"); //skapar LI sätter innehåll
                         emailLI.textContent = booking.email;
-                        const phoneLi = document.createElement("li");
+                        const phoneLi = document.createElement("li"); //skapar LI sätter innehåll
                         phoneLi.textContent = booking.phone;
-                        const fullNameLi = document.createElement("li");
+                        const fullNameLi = document.createElement("li"); //skapar LI sätter innehåll
                         fullNameLi.textContent = booking.firstName + " " + booking.lastName;
-                        const bookDateLi = document.createElement("li");
+                        const bookDateLi = document.createElement("li"); //skapar LI sätter innehåll
                         const bookDateNew = new Date(booking.bookDate);
                         const formatDate = bookDateNew.toLocaleString("sv-SE", {
                             year: "numeric",
@@ -180,10 +184,10 @@ async function getAll() {
                             hour: "2-digit",
                             minute: "2-digit"
                         });
-                        bookDateLi.textContent = formatDate;
-                        const guestLi = document.createElement("li");
+                        bookDateLi.textContent = formatDate; //sätter till rätt format
+                        const guestLi = document.createElement("li"); //skapar LI sätter innehåll
                         guestLi.textContent = "antal g\xe4ster: " + booking.numberGuests;
-                        const deleteButton = document.createElement("button");
+                        const deleteButton = document.createElement("button"); //skapar button sätter innehåll
                         deleteButton.textContent = "Radera";
                         deleteButton.addEventListener("click", async ()=>{
                             try {
@@ -194,11 +198,12 @@ async function getAll() {
                                         "Content-Type": "application/json"
                                     }
                                 });
-                                bookUl.remove();
+                                bookUl.remove(); //tar bort
                             } catch (error) {
                                 console.error(error);
                             }
                         });
+                        //lägger till i bookUl sen i booktable
                         bookUl.appendChild(fullNameLi);
                         bookUl.appendChild(emailLI);
                         bookUl.appendChild(phoneLi);
