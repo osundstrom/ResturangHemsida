@@ -1,5 +1,6 @@
 @use "partials/navigation";
 @use "partials/footer";
+@use "partials/review";
 
 body {
     background-color: rgb(0, 0, 0);
@@ -7,31 +8,31 @@ body {
     margin-left: -1vw;
     font-family: "Pacifico", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-family: "Poetsen One", sans-serif;
+    
 }
 
 
 #pos1{
-    width: 100vw;
-    background-color: black;
-    background-image: url(/src/bilder/signburg.jpg);
-    background-repeat: no-repeat;
-    background-position: 5%;
+    width: 80vw;
+    padding: 2%;
     color: rgb(255, 255, 255);
-    background-size: contain;
+    background-size:contain;
     height: fit-content;
     position: relative;
     text-align: center;
     //border: 1px solid rgb(117, 117, 117);
+    //opacity: 0.5;
     margin: auto;
     margin-top: 5vh;
     margin-bottom: 2vh;
+    border-radius: 10px;
     
 
         ul{
             list-style: none;
             display: inline-block;
             margin: auto;   
-        }
+       }
 
         li{
             display: block;
@@ -40,6 +41,10 @@ body {
             width: 50vw;
             font-size: 90%;
             text-align: left;
+            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+            color: #000;
+             
+            
             
         }
        
@@ -48,6 +53,7 @@ body {
             text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
             text-decoration: underline;
             text-align: center;
+            
         }
 
         h2{
@@ -60,6 +66,8 @@ body {
 
         p{
             font-size: 90%; 
+            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+            color: #000;
             
         }
     }
@@ -89,12 +97,13 @@ body {
         border-radius: 10px;
     }
 
-    h2 {
+    h1 {
         color: rgb(0, 0, 0);
+        
         text-align: center;
-        font-size: 110%;
+        font-size: 150%;
         text-decoration: underline;
-        text-Shadow: -1px -1px 0 #f4c885, 1px -1px 0 #f4c885, -1px  1px 0 #f4c885, 1px  1px 0 #f4c885;
+        //text-Shadow: -2px -2px 0 #f4c885, 2px -2px 0 #f4c885, -2px  2px 0 #f4c885, 2px  2px 0 #f4c885;
 
     }
 
@@ -113,8 +122,8 @@ body {
 
 #pos3{
     width: 100vw;
-    background-position-x: 80%;
-    background-color: black;
+    background-position-x: 90%;
+    //background-color: black;
     height: fit-content;
     position: relative;
     background-image: url(bilder/signburg.jpg);
@@ -123,6 +132,14 @@ body {
     position: relative;
     z-index: 1;
     margin-left: 1vw;
+
+    #divMessage{
+        background-color: green;
+        padding: 2%;
+        border-radius: 10px;
+        height: fit-content;
+        display: none;
+    }
 
     h2{
         color: white;
@@ -145,18 +162,19 @@ body {
                 position: relative;
             }
             label{
-                font-size: 120%;
+                font-size: 100%;
                 text-align: left;
                 position: relative;
                 text-align:start;
-                margin-left: 2vw;
+                //margin-left: 2vw;
+                margin-top: 2vh;
             }
 
             input {
                 margin: auto;
                 margin-bottom: 1vh;
-                width: 35vw;
-                height: 5vh;
+                width: 40vw;
+                height: 3vh;
             }
 
             button{
@@ -170,12 +188,13 @@ body {
                 color: white;
                 text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000;
                 margin-bottom: 1vh;
-                margin-left: 2vw;
+                //margin-left: 2vw;
             }        
 
             button:hover{
-                color: #f4c885;
+                color: white;
                 text-decoration: underline;
+                background-color: #f4c885;
             }
     }
 
@@ -216,7 +235,7 @@ body {
 #pos5{
     width: 100vw;
     background-position: right;
-    background-color: black;
+    //background-color: black;
     height: fit-content;
     position: relative;
     //background-image: url(/src/bilder/buildaburger.jpg);
@@ -290,7 +309,8 @@ body {
                 margin-top: 1vh;
             } 
             button:hover{
-                color: rgb(244, 200, 133);
+                color: white;
                 text-decoration: underline;
+                background-color:rgb(244, 200, 133) ;
             }
     }}

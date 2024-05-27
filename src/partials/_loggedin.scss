@@ -38,12 +38,14 @@
 
         li{
             width: fit-content;
+            margin-top: 1vh;
             
             
         }
         button{
             width: fit-content;
-            margin-left: 2vw;
+            margin-left: 1vw;
+            margin-top: 1vh;
         }
         button:hover {
             background-color: orange;;
@@ -98,6 +100,56 @@
             background-color: orange;;
         }
     }
+
+}
+
+#pos3{
+    height: fit-content;
+
+
+
+    #bookTableDiv{
+        color: black;
+        z-index: 1;
+        width:fit-content;
+        display: inline-block;
+        
+    }
+
+    h2{text-align: center;
+        text-decoration: underline;
+        color: orange;
+    }
+
+    ul{
+        list-style: none;
+        display: inline-block;
+        margin: auto;
+        align-items: center;
+        padding: 2%;
+        border: 1px solid white;
+        border-radius: 10px;
+        width:30vw;
+        margin-left: 5vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        background-color: white;
+        
+
+        li{
+            width: fit-content;
+            margin-top: 1vh;
+            
+        }
+        button {
+            margin-top: 1vh;
+        }
+
+        button:hover {
+            background-color: orange;;
+        }
+
+        }
 
 }
    

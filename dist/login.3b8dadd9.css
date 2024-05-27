@@ -14,6 +14,28 @@
   color: #f4c885;
 }
 
+#gifBurger {
+  z-index: 1;
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+}
+
+#gifBurger img {
+  width: 5vw;
+}
+
+#gifBurger2 {
+  z-index: 1;
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+}
+
+#gifBurger2 img {
+  width: 5vw;
+}
+
 #navigation {
   text-align: center;
   background-color: #fff;
@@ -91,6 +113,10 @@ footer a:hover {
   text-decoration: underline;
 }
 
+footer .changePic {
+  width: 20vw;
+}
+
 #pos2 h2 {
   text-align: center;
   color: orange;
@@ -118,11 +144,13 @@ footer a:hover {
 
 #pos2 ul li {
   width: fit-content;
+  margin-top: 1vh;
 }
 
 #pos2 ul button {
   width: fit-content;
-  margin-left: 2vw;
+  margin-top: 1vh;
+  margin-left: 1vw;
 }
 
 #pos2 ul button:hover {
@@ -172,6 +200,48 @@ footer a:hover {
 }
 
 #pos2 #formAdmin button:hover {
+  background-color: orange;
+}
+
+#pos3 {
+  height: fit-content;
+}
+
+#pos3 #bookTableDiv {
+  color: #000;
+  z-index: 1;
+  width: fit-content;
+  display: inline-block;
+}
+
+#pos3 h2 {
+  text-align: center;
+  color: orange;
+  text-decoration: underline;
+}
+
+#pos3 ul {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  align-items: center;
+  width: 30vw;
+  margin: 2vh auto 2vh 5vw;
+  padding: 2%;
+  list-style: none;
+  display: inline-block;
+}
+
+#pos3 ul li {
+  width: fit-content;
+  margin-top: 1vh;
+}
+
+#pos3 ul button {
+  margin-top: 1vh;
+}
+
+#pos3 ul button:hover {
   background-color: orange;
 }
 

@@ -18,7 +18,7 @@ async function getAll() {
     try {
         if (!token || token == null) {
             console.error("Ingen token finns"); //skrivs ut
-            window.location.href = "login.html"; //om ej token till login
+            //window.location.href = "login.html";//om ej token till login
             return;
         } else {
             const response = await fetch(url + "/secret", {
@@ -30,7 +30,7 @@ async function getAll() {
             if (!response) {
                 console.log("IF1");
                 console.error("Kunde ej h\xe4mta data"); //skrivs ut
-                window.location.href = "login.html"; //om ej ok response till login
+                //window.location.href = "login.html"; //om ej ok response till login
                 return;
             }
             let matDiv = document.getElementById("matDiv");
@@ -121,40 +121,100 @@ async function getAll() {
                 if (item.type === "Mat") matDiv.appendChild(ItemDiv);
                 else dryckDiv.appendChild(ItemDiv);
             });
+            const buttonMeny = document.getElementById("buttonMeny");
+            const formAdmin = document.getElementById("formAdmin");
+            buttonMeny.addEventListener("click", async ()=>{
+                const token = getToken();
+                let nameItem = document.getElementById("nameID").value;
+                let priceItem = document.getElementById("priceID").value;
+                let descriptionItem = document.getElementById("descriptionID").value;
+                let typeItem = document.getElementById("typeID").value;
+                const itemData = {
+                    name: nameItem,
+                    price: priceItem,
+                    description: descriptionItem,
+                    type: typeItem
+                };
+                try {
+                    const response = await fetch(url + "/meny", {
+                        method: "POST",
+                        headers: {
+                            "Authorization": "Bearer " + token,
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(itemData)
+                    });
+                    if (!response.ok) console.log("failed", response.statusText);
+                    else console.log("added");
+                //formAdmin.reset();
+                } catch (error) {
+                    console.error("Error:", error.message);
+                }
+            });
+            getBook();
+            async function getBook() {
+                try {
+                    const response = await fetch(url + "/booking", {
+                        method: "GET",
+                        headers: {
+                            "Authorization": "Bearer " + token,
+                            "Content-Type": "application/json"
+                        }
+                    });
+                    const data = await response.json();
+                    const bookTable = document.getElementById("bookTableDiv");
+                    data.forEach((booking)=>{
+                        const bookUl = document.createElement("ul");
+                        const emailLI = document.createElement("li");
+                        emailLI.textContent = booking.email;
+                        const phoneLi = document.createElement("li");
+                        phoneLi.textContent = "Telefon: " + booking.phone;
+                        const fullNameLi = document.createElement("li");
+                        fullNameLi.textContent = "namn: " + booking.lastName + booking.firstName;
+                        const bookDateLi = document.createElement("li");
+                        const bookDateNew = new Date(booking.bookDate);
+                        const formatDate = bookDateNew.toLocaleString("sv-SE", {
+                            year: "numeric",
+                            month: "2-digit",
+                            day: "2-digit",
+                            hour: "2-digit",
+                            minute: "2-digit"
+                        });
+                        bookDateLi.textContent = "Datum: " + formatDate;
+                        const guestLi = document.createElement("li");
+                        guestLi.textContent = "antal g\xe4ster: " + booking.numberGuests;
+                        const deleteButton = document.createElement("button");
+                        deleteButton.textContent = "Radera";
+                        deleteButton.addEventListener("click", async ()=>{
+                            try {
+                                await fetch(url + "/booking" + booking._id, {
+                                    method: "DELETE",
+                                    headers: {
+                                        "Authorization": "Bearer " + token,
+                                        "Content-Type": "application/json"
+                                    }
+                                });
+                                bookUl.remove();
+                            } catch (error) {
+                                console.error(error);
+                            }
+                        });
+                        bookUl.appendChild(emailLI);
+                        bookUl.appendChild(phoneLi);
+                        bookUl.appendChild(fullNameLi);
+                        bookUl.appendChild(bookDateLi);
+                        bookUl.appendChild(guestLi);
+                        bookUl.appendChild(deleteButton);
+                        bookTable.appendChild(bookUl);
+                    });
+                } catch (error) {
+                    console.error(error);
+                }
+            }
         }
     } catch (error) {
         console.error(error);
     }
 }
-const buttonMeny = document.getElementById("buttonMeny");
-const formAdmin = document.getElementById("formAdmin");
-buttonMeny.addEventListener("click", async ()=>{
-    const token = getToken();
-    let nameItem = document.getElementById("nameID").value;
-    let priceItem = document.getElementById("priceID").value;
-    let descriptionItem = document.getElementById("descriptionID").value;
-    let typeItem = document.getElementById("typeID").value;
-    const itemData = {
-        name: nameItem,
-        price: priceItem,
-        description: descriptionItem,
-        type: typeItem
-    };
-    try {
-        const response = await fetch(url + "/meny", {
-            method: "POST",
-            headers: {
-                "Authorization": "Bearer " + token,
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(itemData)
-        });
-        if (!response.ok) console.log("failed", response.statusText);
-        else console.log("added");
-    //formAdmin.reset();
-    } catch (error) {
-        console.error("Error:", error.message);
-    }
-});
 
 //# sourceMappingURL=admin.861e015c.js.map

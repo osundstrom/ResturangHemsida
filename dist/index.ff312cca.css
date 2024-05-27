@@ -14,6 +14,28 @@
   color: #f4c885;
 }
 
+#gifBurger {
+  z-index: 1;
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+}
+
+#gifBurger img {
+  width: 5vw;
+}
+
+#gifBurger2 {
+  z-index: 1;
+  position: absolute;
+  top: 3vh;
+  right: 2vw;
+}
+
+#gifBurger2 img {
+  width: 5vw;
+}
+
 #navigation {
   text-align: center;
   background-color: #fff;
@@ -91,6 +113,40 @@ footer a:hover {
   text-decoration: underline;
 }
 
+footer .changePic {
+  width: 20vw;
+}
+
+#rating {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+}
+
+#rating input {
+  display: none;
+}
+
+#rating label {
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 5px;
+}
+
+#rating label:hover {
+  background-color: #ff0;
+}
+
+#rating input:checked ~ label:hover, #rating input:checked ~ label {
+  background-color: gold;
+}
+
 body {
   background-color: #000;
   margin-left: -1vw;
@@ -101,14 +157,12 @@ body {
 #pos1 {
   color: #fff;
   text-align: center;
-  background-color: #000;
-  background-image: url("signburg.753ba2dc.jpg");
-  background-position: 5%;
-  background-repeat: no-repeat;
   background-size: contain;
-  width: 100vw;
+  border-radius: 10px;
+  width: 80vw;
   height: fit-content;
   margin: 5vh auto 2vh;
+  padding: 2%;
   position: relative;
 }
 
@@ -120,6 +174,8 @@ body {
 
 #pos1 li {
   text-align: left;
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  color: #000;
   width: 50vw;
   margin-right: 1vw;
   font-size: 90%;
@@ -141,6 +197,8 @@ body {
 }
 
 #pos1 p {
+  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  color: #000;
   font-size: 90%;
 }
 
@@ -162,11 +220,10 @@ body {
   margin: auto auto 10vh;
 }
 
-#pos2 h2 {
+#pos2 h1 {
   color: #000;
   text-align: center;
-  text-shadow: -1px -1px #f4c885, 1px -1px #f4c885, -1px 1px #f4c885, 1px 1px #f4c885;
-  font-size: 110%;
+  font-size: 150%;
   text-decoration: underline;
 }
 
@@ -176,15 +233,22 @@ body {
 
 #pos3 {
   z-index: 1;
-  background-color: #000;
   background-image: url("signburg.753ba2dc.jpg");
-  background-position-x: 80%;
+  background-position-x: 90%;
   background-repeat: no-repeat;
   background-size: contain;
   width: 100vw;
   height: fit-content;
   margin-left: 1vw;
   position: relative;
+}
+
+#pos3 #divMessage {
+  background-color: green;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 2%;
+  display: none;
 }
 
 #pos3 h2 {
@@ -212,14 +276,14 @@ body {
 #pos3 #divForm label {
   text-align: left;
   text-align: start;
-  margin-left: 2vw;
-  font-size: 120%;
+  margin-top: 2vh;
+  font-size: 100%;
   position: relative;
 }
 
 #pos3 #divForm input {
-  width: 35vw;
-  height: 5vh;
+  width: 40vw;
+  height: 3vh;
   margin: auto auto 1vh;
 }
 
@@ -231,13 +295,13 @@ body {
   width: fit-content;
   height: 5vh;
   margin-bottom: 1vh;
-  margin-left: 2vw;
   font-weight: 900;
   position: relative;
 }
 
 #pos3 #divForm button:hover {
-  color: #f4c885;
+  color: #fff;
+  background-color: #f4c885;
   text-decoration: underline;
 }
 
@@ -264,7 +328,6 @@ body {
 
 #pos5 {
   z-index: 1;
-  background-color: #000;
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,7 +401,8 @@ body {
 }
 
 #pos5 #gridItem2 button:hover {
-  color: #f4c885;
+  color: #fff;
+  background-color: #f4c885;
   text-decoration: underline;
 }
 /*# sourceMappingURL=index.ff312cca.css.map */

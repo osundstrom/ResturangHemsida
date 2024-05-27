@@ -14,6 +14,28 @@
     }
 }
 
+
+#gifBurger{
+    position: absolute;
+    z-index: 1;
+    left: 2vw;
+    top: 3vh;
+    img{
+        width: 5vw;
+    }
+}
+
+#gifBurger2{
+    position: absolute;
+    z-index: 1;
+    right: 2vw;
+    top: 3vh;
+    img{
+        width: 5vw;
+    }
+}
+
+
 #navigation{
     
     width: 101vw;
@@ -39,6 +61,7 @@
         top: 5vh;
         font-family: "Danfo", serif;
         font-size: 300%;
+        
 
     }
 

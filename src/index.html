@@ -38,6 +38,12 @@
 
     <section id="pos1">
         <div>
+            <div id="gifBurger">
+                <img src="/src/bilder/burgers-7960_512.gif" alt="gif of a burger">
+            </div>
+            <div id="gifBurger2">
+                <img src="/src/bilder/burgers-7960_512.gif" alt="gif of a burger">
+            </div>
             
             <h1>Det finns tre saker som gör en bra hamburgarupplevelse.</h1>
             <ul>
@@ -65,14 +71,14 @@
 
         <div id="grid2x2">
             <div id="gridItem">
-                <h2>Hamburgare</h2>
+                <h1>Hamburgare</h1>
                 <div id="matDiv">
 
                 </div>
 
             </div>
             <div id="gridItem">
-                <h2>Dryck</h2>
+                <h1>Dryck</h1>
                 <div id="dryckDiv">
 
                 </div>
@@ -90,7 +96,9 @@
 
         <div id="divForm">
             <h2>Boka bord</h2>
-            <div id="messageErr"></div>
+            <div id="divMessage">
+
+            </div>
                 <form id="form">
                     <label for="email"> E-postadress:</label>
                     <input type="text" id="emailID" class="inputAll" name="email" required>
@@ -99,12 +107,18 @@
                     <input type="text" id="phoneID" class="inputAll" name="phone" required>
         
 
-                    <label for="firstname"> Förnamn:</label>
-                    <input type="text" id="firstnameID" class="inputAll" name="firstname" required>
+                    <label for="firstName"> Förnamn:</label>
+                    <input type="text" id="firstNameID" class="inputAll" name="firstname" required>
         
         
-                    <label for="lastname"> Efternamn:</label>
-                    <input type="text" id="lastnameID" class="inputAll" name="lastname" required>
+                    <label for="lastName"> Efternamn:</label>
+                    <input type="text" id="lastNameID" class="inputAll" name="lastname" required>
+
+                    <label for="bookDate">Datum:</label>
+                    <input type="datetime-local" id="bookDateID" class="inputAll" name="bookDate" required>
+
+                    <label for="table"> Antal gäster:</label>
+                    <input type="text" id="tableID" class="inputAll" name="table" required>
         
                     <button id="resButton" type="submit" > Reservera</button>
                 </form>
@@ -146,19 +160,28 @@
 
             <div id="gridItem2">
 
-                <h2>Skicka ett meddelande</h2>
+                <h2>Lämna gärna en recension!</h2>
             
                 <form id="form">
-                    <label for="email"> E-postadress:</label>
-                    <input type="text" id="emailID" class="inputAll" name="email" required>
-                    
-                    <label for="phoneContact"> Telefon:</label>
-                    <input type="text" id="phoneContactID" class="inputAll" name="phoneContact" required>
+                    <label for="fullName"> namn:</label>
+                    <input type="text" id="fullNameID" class="inputAll" name="fullName" required>
+
+                     
+             <div id="rating">
+                
+                <input type="radio" id="dot5" name="grade" value="5"><label for="dot5"></label>
+                <input type="radio" id="dot4" name="grade" value="4"><label for="dot4"></label>
+                <input type="radio" id="dot3" name="grade" value="3"><label for="dot3"></label>
+                <input type="radio" id="dot2" name="grade" value="2"><label for="dot2"></label>
+                <input type="radio" id="dot1" name="grade" value="1"><label for="dot1"></label>
+                
+            </div>
+
 
                     <label for="message"> Meddelande:</label>
                     <textarea type="text" id="messageID" class="inputAll" name="message" required>
         
-                    <button id="resButton" type="submit" > Skicka</button>
+                    <button id="sendButton" type="submit" > Skicka</button>
                     </form>
             </div>
 
@@ -168,7 +191,7 @@
     </section>
 
 
-    <footer>
+    <footer id="footer">
         <p>No Nonsense Burgers &#xa9;</p>
         <p><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></p>
         <p><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> Instagram</a></p>
