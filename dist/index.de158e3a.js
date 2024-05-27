@@ -1,7 +1,9 @@
 let url = "http://localhost:3000/api";
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function(e) {
     console.log("DOM");
+    e.preventDefault();
     getAll(); //körs getAll
+    getReview();
 });
 async function getAll() {
     try {
@@ -30,7 +32,6 @@ async function getAll() {
             nameLi.textContent = item.name;
             nameLi.style.fontWeight = "900";
             //nameLi.style.textDecoration = "underline";
-            nameLi.style.fontSize = "130%";
             nameLi.style.color = "orange";
             nameLi.style.display = "inline-block";
             nameLi.style.textShadow = "-1px -1px 0 #000, 1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000";
@@ -96,6 +97,86 @@ async function saveBooking() {
             tableInput.value = "";
             bookDateInput.value = "";
         }
+    } catch (error) {
+        console.error(error);
+    }
+}
+const sendButton = document.getElementById("sendButton");
+const divMessage2 = document.getElementById("divMessage2");
+sendButton.addEventListener("click", function(e) {
+    e.preventDefault();
+    saveReview();
+});
+async function saveReview() {
+    let nameInput = document.getElementById("fullNameID");
+    let messageInput = document.getElementById("messageID");
+    let nameData = nameInput.value;
+    let messageData = messageInput.value;
+    let ratingInput = document.getElementsByClassName("ratingClass");
+    let ratingData;
+    for (const ratings of ratingInput)if (ratings.checked) {
+        ratingData = ratings.value;
+        break;
+    }
+    if (!nameData || !ratingData || !messageData) {
+        divMessage2.textContent = "Alla f\xe4lt m\xe5ste fyllas i!";
+        divMessage2.style.display = "block";
+        divMessage2.style.color = "orange";
+        return;
+    }
+    const reviewData = {
+        name: nameData,
+        rating: ratingData,
+        message: messageData
+    };
+    try {
+        const respone = await fetch(url + "/review", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(reviewData)
+        });
+        if (respone.ok) {
+            divMessage2.textContent = "Tack f\xf6r din recension";
+            divMessage2.style.display = "block";
+            nameInput.value = "";
+            messageInput.value = "";
+            for (const rating of ratingInput)rating.checked = false;
+        }
+    } catch (error) {
+        console.error(error);
+    }
+    getReview();
+}
+async function getReview() {
+    console.log("getReview");
+    try {
+        const response = await fetch(url + "/review", {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        const data = await response.json();
+        const reviewsDiv = document.getElementById("reviewsDiv");
+        reviewsDiv.innerHTML = "";
+        const last2Reviews = data.slice(-2).reverse();
+        last2Reviews.forEach((review)=>{
+            const reviewUl = document.createElement("ul");
+            const nameLi = document.createElement("li");
+            nameLi.textContent = review.name;
+            nameLi.style.color = "orange";
+            const ratingLi = document.createElement("li");
+            ratingLi.textContent = "Betyg: " + review.rating + "/5";
+            ratingLi.style.color = "yellow";
+            const messageLi = document.createElement("li");
+            messageLi.textContent = review.message;
+            reviewUl.appendChild(nameLi);
+            reviewUl.appendChild(ratingLi);
+            reviewUl.appendChild(messageLi);
+            reviewsDiv.appendChild(reviewUl);
+        });
     } catch (error) {
         console.error(error);
     }

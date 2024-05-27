@@ -249,14 +249,14 @@ async function getAll() { //funktion getAll
                     const bookUl = document.createElement("ul");
                     
                     const emailLI = document.createElement("li");
-                    emailLI.textContent = booking.email;      
+                    emailLI.textContent =  booking.email;      
     
                     const phoneLi = document.createElement("li");
-                    phoneLi.textContent = "Telefon: " + booking.phone;
+                    phoneLi.textContent =  booking.phone;
     
     
                     const fullNameLi = document.createElement("li");
-                    fullNameLi.textContent = "namn: " + booking.lastName + booking. firstName;
+                    fullNameLi.textContent =  booking.firstName + " " + booking.lastName;
     
                     const bookDateLi = document.createElement("li");
                     const bookDateNew = new Date(booking.bookDate);
@@ -269,7 +269,7 @@ async function getAll() { //funktion getAll
                         minute: "2-digit"
                     });
 
-                    bookDateLi.textContent = "Datum: " + formatDate;
+                    bookDateLi.textContent =  formatDate;
 
                     const guestLi = document.createElement("li");
                     guestLi.textContent = "antal gäster: " + booking.numberGuests;
@@ -295,9 +295,9 @@ async function getAll() { //funktion getAll
                         }
                     });
 
+                    bookUl.appendChild(fullNameLi);
                     bookUl.appendChild(emailLI);
                     bookUl.appendChild(phoneLi);
-                    bookUl.appendChild(fullNameLi);
                     bookUl.appendChild(bookDateLi);
                     bookUl.appendChild(guestLi);
                     

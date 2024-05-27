@@ -70,13 +70,27 @@
 #navigation a {
   color: #000;
   text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
-  font-size: 140%;
+  font-size: 150%;
   font-weight: 900;
   text-decoration: none;
 }
 
 #navigation a:hover {
   text-decoration: underline;
+}
+
+@media (width <= 799px) {
+  #navigation h1 {
+    font-size: 190%;
+  }
+
+  #navigation ul {
+    margin-left: -4vw;
+  }
+
+  #navigation a {
+    font-size: 120%;
+  }
 }
 
 footer {
@@ -115,6 +129,12 @@ footer a:hover {
 
 footer .changePic {
   width: 20vw;
+}
+
+@media (width <= 799px) {
+  a {
+    font-size: 65%;
+  }
 }
 
 #pos2 h2 {

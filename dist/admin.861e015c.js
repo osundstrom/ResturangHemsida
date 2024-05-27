@@ -168,9 +168,9 @@ async function getAll() {
                         const emailLI = document.createElement("li");
                         emailLI.textContent = booking.email;
                         const phoneLi = document.createElement("li");
-                        phoneLi.textContent = "Telefon: " + booking.phone;
+                        phoneLi.textContent = booking.phone;
                         const fullNameLi = document.createElement("li");
-                        fullNameLi.textContent = "namn: " + booking.lastName + booking.firstName;
+                        fullNameLi.textContent = booking.firstName + " " + booking.lastName;
                         const bookDateLi = document.createElement("li");
                         const bookDateNew = new Date(booking.bookDate);
                         const formatDate = bookDateNew.toLocaleString("sv-SE", {
@@ -180,7 +180,7 @@ async function getAll() {
                             hour: "2-digit",
                             minute: "2-digit"
                         });
-                        bookDateLi.textContent = "Datum: " + formatDate;
+                        bookDateLi.textContent = formatDate;
                         const guestLi = document.createElement("li");
                         guestLi.textContent = "antal g\xe4ster: " + booking.numberGuests;
                         const deleteButton = document.createElement("button");
@@ -199,9 +199,9 @@ async function getAll() {
                                 console.error(error);
                             }
                         });
+                        bookUl.appendChild(fullNameLi);
                         bookUl.appendChild(emailLI);
                         bookUl.appendChild(phoneLi);
-                        bookUl.appendChild(fullNameLi);
                         bookUl.appendChild(bookDateLi);
                         bookUl.appendChild(guestLi);
                         bookUl.appendChild(deleteButton);

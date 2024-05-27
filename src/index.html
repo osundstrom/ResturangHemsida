@@ -53,7 +53,7 @@
                 
                 <li><h2>Brödet</h2> Brödet är bakat hos oss, det bakas nytt färsk bröd varje dag. Vår bagare har bakat bröd i alla dess former i Usa, Italien och frankrike hos flera berömda resturanger.  </li>
                 
-                <li><h2>Miljön</h2>Det är där vi kommer in, vi är et familjeägt burgarhak i riktig enkelt stil. Hos oss kan ni äta goda burgare, 
+                <li><h2>Miljön</h2>Det är där vi kommer in, vi är ett familjeägt burgarhak i riktig enkelt stil. Hos oss kan ni äta goda burgare, 
                     umgås med vänner, hänga i baren eller varför inte spela lite biljard. </li>
             </ul>
 
@@ -118,7 +118,7 @@
                     <input type="datetime-local" id="bookDateID" class="inputAll" name="bookDate" required>
 
                     <label for="table"> Antal gäster:</label>
-                    <input type="text" id="tableID" class="inputAll" name="table" required>
+                    <input type="number" id="tableID" class="inputAll" name="table" required>
         
                     <button id="resButton" type="submit" > Reservera</button>
                 </form>
@@ -145,7 +145,7 @@
 
                 <ul>
                     <li>Telefon: 0770 000 000</li>
-                    <li>Epost: <a href="mailto: Nononsense@burger.se"> Nononsense@burger.se </a></li>
+                    <li><a href="mailto: Nononsense@burger.se"> Mejla oss </a></li>
                 </ul>
 
                 <h2>Öppetider</h2>
@@ -163,23 +163,24 @@
                 <h2>Lämna gärna en recension!</h2>
             
                 <form id="form">
-                    <label for="fullName"> namn:</label>
+                    <div id="divMessage2"></div>
+                    <label for="fullName"> Namn:</label>
                     <input type="text" id="fullNameID" class="inputAll" name="fullName" required>
 
                      
              <div id="rating">
                 
-                <input type="radio" id="dot5" name="grade" value="5"><label for="dot5"></label>
-                <input type="radio" id="dot4" name="grade" value="4"><label for="dot4"></label>
-                <input type="radio" id="dot3" name="grade" value="3"><label for="dot3"></label>
-                <input type="radio" id="dot2" name="grade" value="2"><label for="dot2"></label>
-                <input type="radio" id="dot1" name="grade" value="1"><label for="dot1"></label>
+                <input class="ratingClass" type="radio" id="dot5" name="grade" value="5"><label for="dot5"></label>
+                <input class="ratingClass" type="radio" id="dot4" name="grade" value="4"><label for="dot4"></label>
+                <input class="ratingClass" type="radio" id="dot3" name="grade" value="3"><label for="dot3"></label>
+                <input class="ratingClass" type="radio" id="dot2" name="grade" value="2"><label for="dot2"></label>
+                <input class="ratingClass" type="radio" id="dot1" name="grade" value="1"><label for="dot1"></label>
                 
             </div>
 
 
                     <label for="message"> Meddelande:</label>
-                    <textarea type="text" id="messageID" class="inputAll" name="message" required>
+                    <textarea type="text" id="messageID" class="inputAll" name="message" required></textarea>
         
                     <button id="sendButton" type="submit" > Skicka</button>
                     </form>
@@ -188,6 +189,16 @@
         </div>
     
         
+    </section>
+
+    <section id="pos6">
+        <h2 style="text-align: center;">Senaste recensionerna</h2>
+        
+        <div id="reviewsDiv">
+
+        </div>
+
+
     </section>
 
 
