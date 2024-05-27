@@ -1,5 +1,6 @@
 //let url = "https://projektdt207.onrender.com/api" // url
-let url = "http://localhost:3000/api";
+let url = "https://projektdt207-1.onrender.com";
+//let url = "http://localhost:3000/api"
 //----------------logga in användare--------------------------------//
 let loginButton = document.getElementById("buttonLogin"); //hämtar knappen
 loginButton.addEventListener("click", async function(e) {

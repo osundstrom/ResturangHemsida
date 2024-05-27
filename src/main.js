@@ -1,5 +1,7 @@
 
-let url = "http://localhost:3000/api"
+//let url = "http://localhost:3000/api"
+
+let url = "https://projektdt207-1.onrender.com";
 
 
 document.addEventListener("DOMContentLoaded", function (e) { //När sidan laddats in körs
