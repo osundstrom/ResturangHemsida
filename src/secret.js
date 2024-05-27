@@ -6,7 +6,7 @@ let url = "https://projektdt207-1.onrender.com/api"; //sätter url till render l
 
 
 function deleteToken() { //funktion för att radera token
-
+    console.log("deletedToken")
     localStorage.removeItem("token");//radera token
 
 };
@@ -33,7 +33,7 @@ async function getAll() { //funktion getAll
 
             console.error("Ingen token finns"); //skrivs ut
 
-            //window.location.href = "login.html";//om ej token till login
+            window.location.href = "login.html";//om ej token till login
             return
 
         } else {
@@ -49,7 +49,7 @@ async function getAll() { //funktion getAll
             if (!response) { //Om responsen inte är ok
                 console.log("IF1")
                 console.error("Kunde ej hämta data"); //skrivs ut
-                //window.location.href = "login.html"; //om ej ok response till login
+                window.location.href = "login.html"; //om ej ok response till login
                 return
             }
 
