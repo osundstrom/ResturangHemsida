@@ -70,14 +70,14 @@
     <section id="pos2">
 
         <div id="grid2x2">
-            <div id="gridItem">
+            <div class="gridItem">
                 <h1>Hamburgare</h1>
                 <div id="matDiv">
 
                 </div>
 
             </div>
-            <div id="gridItem">
+            <div class="gridItem">
                 <h1>Dryck</h1>
                 <div id="dryckDiv">
 
@@ -100,24 +100,24 @@
 
             </div>
                 <form id="form">
-                    <label for="email"> E-postadress:</label>
+                    <label for="emailID"> E-postadress:</label>
                     <input type="text" id="emailID" class="inputAll" name="email" required="">
                     
-                    <label for="phone"> Telefon:</label>
+                    <label for="phoneID"> Telefon:</label>
                     <input type="text" id="phoneID" class="inputAll" name="phone" required="">
         
 
-                    <label for="firstName"> Förnamn:</label>
+                    <label for="firstNameID"> Förnamn:</label>
                     <input type="text" id="firstNameID" class="inputAll" name="firstname" required="">
         
         
-                    <label for="lastName"> Efternamn:</label>
+                    <label for="lastNameID"> Efternamn:</label>
                     <input type="text" id="lastNameID" class="inputAll" name="lastname" required="">
 
-                    <label for="bookDate">Datum:</label>
+                    <label for="bookDateID">Datum:</label>
                     <input type="datetime-local" id="bookDateID" class="inputAll" name="bookDate" required="">
 
-                    <label for="table"> Antal gäster:</label>
+                    <label for="tableID"> Antal gäster:</label>
                     <input type="number" id="tableID" class="inputAll" name="table" required="">
         
                     <button id="resButton" type="submit"> Reservera</button>
@@ -145,7 +145,7 @@
 
                 <ul>
                     <li>Telefon: 0770 000 000</li>
-                    <li><a href="mailto: Nononsense@burger.se"> Mejla oss </a></li>
+                    <li><a href="mailto:Nononsense@burger.se"> Mejla oss </a></li>
                 </ul>
 
                 <h2>Öppetider</h2>
@@ -162,9 +162,9 @@
 
                 <h2>Lämna gärna en recension!</h2>
             
-                <form id="form">
+                <form class="form">
                     <div id="divMessage2"></div>
-                    <label for="fullName"> Namn:</label>
+                    <label for="fullNameID"> Namn:</label>
                     <input type="text" id="fullNameID" class="inputAll" name="fullName" required="">
 
                      
@@ -179,8 +179,8 @@
             </div>
 
 
-                    <label for="message"> Meddelande:</label>
-                    <textarea type="text" id="messageID" class="inputAll" name="message" required=""></textarea>
+                    <label for="messageID"> Meddelande:</label>
+                    <textarea id="messageID" class="inputAll" name="message" required=""></textarea>
         
                     <button id="sendButton" type="submit"> Skicka</button>
                     </form>
