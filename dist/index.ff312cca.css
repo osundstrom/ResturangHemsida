@@ -445,7 +445,6 @@ body {
 
 #pos6 ul {
   text-align: left;
-  border: 1px solid #fff;
   border-radius: 10px;
   flex-direction: column;
   width: fit-content;
@@ -636,7 +635,6 @@ body {
 
   #pos6 ul {
     text-align: left;
-    border: 1px solid #fff;
     border-radius: 10px;
     flex-direction: column;
     width: fit-content;
