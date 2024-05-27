@@ -17,8 +17,8 @@
 
 #gifBurger{
     position: absolute;
-    z-index: 1;
-    left: 2vw;
+    z-index: -1;
+    left: 1vw;
     top: 3vh;
     img{
         width: 5vw;
@@ -27,9 +27,10 @@
 
 #gifBurger2{
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     right: 2vw;
     top: 3vh;
+
     img{
         width: 5vw;
     }
