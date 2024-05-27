@@ -116,3 +116,42 @@ body {
         text-align: center;
     }
 }
+
+
+
+
+@media (max-width:799px) { 
+    #divForm{
+        form{
+            display:flex;
+            flex-direction: column;
+            width: 70vw;
+            padding-bottom: 5vh;
+            height:fit-content;
+        }
+        input{
+            height: 4vh;
+            font-weight: 600;
+        }
+    
+        label{
+            font-weight: 900;
+            margin-top: 1vh;
+        }
+    
+        button{
+            width: 24vw;
+            height: 5vh;
+            margin-top: 2vh;
+    
+        }
+        h2{
+            text-decoration: underline;
+        }
+    
+        button:hover{
+            background-color: orange;
+            text-decoration: underline;
+        }
+    }
+    }

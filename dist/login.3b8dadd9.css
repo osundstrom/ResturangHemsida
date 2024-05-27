@@ -281,6 +281,13 @@ footer .changePic {
   background-color: orange;
 }
 
+@media (width <= 799px) {
+  #pos2 ul, #pos3 ul {
+    width: 70vw;
+    margin-left: 3vw;
+  }
+}
+
 body {
   color: #fff;
   background-color: #000;
@@ -359,5 +366,40 @@ body {
 
 #divAdminForm h2 {
   text-align: center;
+}
+
+@media (width <= 799px) {
+  #divForm form {
+    flex-direction: column;
+    width: 70vw;
+    height: fit-content;
+    padding-bottom: 5vh;
+    display: flex;
+  }
+
+  #divForm input {
+    height: 4vh;
+    font-weight: 600;
+  }
+
+  #divForm label {
+    margin-top: 1vh;
+    font-weight: 900;
+  }
+
+  #divForm button {
+    width: 24vw;
+    height: 5vh;
+    margin-top: 2vh;
+  }
+
+  #divForm h2 {
+    text-decoration: underline;
+  }
+
+  #divForm button:hover {
+    background-color: orange;
+    text-decoration: underline;
+  }
 }
 /*# sourceMappingURL=login.3b8dadd9.css.map */
