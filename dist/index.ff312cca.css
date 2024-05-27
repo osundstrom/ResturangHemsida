@@ -449,6 +449,7 @@ body {
   border-radius: 10px;
   flex-direction: column;
   width: fit-content;
+  margin-left: 5vh;
   padding: 5%;
   list-style: none;
   display: inline-flex;
@@ -639,6 +640,7 @@ body {
     border-radius: 10px;
     flex-direction: column;
     width: fit-content;
+    margin-left: 0;
     padding: 5%;
     list-style: none;
     display: inline-flex;
