@@ -7,7 +7,7 @@
 60C:\ResturangHemsida\node_modules\cosmiconfig\dist\loaders.js133606297012680624 0
 63C:\ResturangHemsida\node_modules\@swc\helpers\cjs\_ts_param.cjs133606297021697191 0
 56C:\ResturangHemsida\node_modules\source-map\package.json133606297006017982 0
-34C:\ResturangHemsida\src\admin.html133613034529955402 0
+34C:\ResturangHemsida\src\admin.html133613040794384755 0
 85C:\ResturangHemsida\node_modules\@swc\helpers\_\_class_private_field_get\package.json133606297026803083 0
 67C:\ResturangHemsida\node_modules\@parcel\core\src\serializerCore.js133606297024682728 0
 60C:\ResturangHemsida\node_modules\source-map\lib\array-set.js133606297010550241 0
@@ -186,7 +186,7 @@
 79C:\ResturangHemsida\node_modules\lmdb\node_modules\node-addon-api\noexcept.gypi133606297009950125 0
 81C:\ResturangHemsida\node_modules\@swc\helpers\src\_object_destructuring_empty.mjs133606297030818787 0
 78C:\ResturangHemsida\node_modules\@parcel\runtime-browser-hmr\src\HMRRuntime.js133606297011390374 0
-24C:\ResturangHemsida\dist133613030907812844 1
+24C:\ResturangHemsida\dist133613040794739806 1
 72C:\ResturangHemsida\node_modules\csso\node_modules\mdn-data\package.json133606297013845813 0
 32C:\ResturangHemsida\package.json133606308549619474 0
 85C:\ResturangHemsida\node_modules\@swc\helpers\esm\_object_without_properties_loose.js133606297025057784 0
@@ -6047,7 +6047,6 @@
 42C:\ResturangHemsida\dist\admin.861e015c.js133613030593104745 0
 53C:\ResturangHemsida\dist\ResturangHemsida.59712999.js133613030593104745 0
 42C:\ResturangHemsida\dist\admin.0e74c27c.js133613030593104745 0
-35C:\ResturangHemsida\dist\admin.html133613030593174757 0
 35C:\ResturangHemsida\dist\index.html133613030593174757 0
 43C:\ResturangHemsida\dist\index.ff312cca.css133613030593174757 0
 46C:\ResturangHemsida\dist\index.de158e3a.js.map133613030593209765 0
@@ -6056,3 +6055,4 @@
 47C:\ResturangHemsida\dist\index.ff312cca.css.map133613030593294777 0
 49C:\ResturangHemsida\dist\whiteBricks.749609bf.jpg133613030593319784 0
 47C:\ResturangHemsida\dist\login.3b8dadd9.css.map133613030907802838 0
+35C:\ResturangHemsida\dist\admin.html133613040794729791 0
