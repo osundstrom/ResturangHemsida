@@ -1,4 +1,4 @@
-6052
+6057
 109C:\ResturangHemsida\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\node\SelectorList.js133606297023282452 0
 55C:\ResturangHemsida\node_modules\mdn-data\l10n\css.json133606297012675609 0
 72C:\ResturangHemsida\node_modules\caniuse-lite\data\features\proximity.js133606297034349403 0
@@ -9,8 +9,8 @@
 68C:\ResturangHemsida\node_modules\css-tree\lib\generator\sourceMap.js133606297027263172 0
 79C:\ResturangHemsida\node_modules\caniuse-lite\data\features\devicepixelratio.js133606297028063301 0
 73C:\ResturangHemsida\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb133606297024962754 1
+45C:\ResturangHemsida\dist\favicon.c525f813.png133612974295128537 0
 55C:\ResturangHemsida\node_modules\htmlnano\.eslintignore133606297006112996 0
-45C:\ResturangHemsida\dist\favicon.c525f813.png133612973070777989 0
 87C:\ResturangHemsida\node_modules\@swc\helpers\esm\_class_check_private_static_access.js133606297023267463 0
 69C:\ResturangHemsida\node_modules\@swc\core\bindings\binding_core_wasm133606297014941032 1
 78C:\ResturangHemsida\node_modules\@parcel\reporter-tracer\lib\TracerReporter.js133606297008199837 0
@@ -18,7 +18,7 @@
 57C:\ResturangHemsida\node_modules\abortcontroller-polyfill133606297013645775 1
 64C:\ResturangHemsida\node_modules\caniuse-lite\data\regions\VI.js133606297036169743 0
 78C:\ResturangHemsida\node_modules\@parcel\runtime-browser-hmr\src\HMRRuntime.js133606297011390374 0
-24C:\ResturangHemsida\dist133612973071826202 1
+24C:\ResturangHemsida\dist133612974355024609 1
 49C:\ResturangHemsida\node_modules\lmdb\src\txn.cpp133606297022287300 0
 92C:\ResturangHemsida\node_modules\@parcel\optimizer-svgo\node_modules\css-select\package.json133606297013755805 0
 63C:\ResturangHemsida\node_modules\csso\node_modules\css-tree\cjs133606297023702554 1
@@ -41,7 +41,6 @@
 66C:\ResturangHemsida\node_modules\@swc\helpers\cjs\_ts_decorate.cjs133606297021482181 0
 37C:\ResturangHemsida\package-lock.json133606297043453746 0
 54C:\ResturangHemsida\node_modules\msgpackr\package.json133606297018061545 0
-43C:\ResturangHemsida\dist\index.ff312cca.css133612973070983025 0
 56C:\ResturangHemsida\node_modules\react-error-overlay\lib133606297006783520 1
 59C:\ResturangHemsida\node_modules\@parcel\cache\lib\types.js133606297013535760 0
 41C:\ResturangHemsida\node_modules\svgo\bin133606297008859941 1
@@ -57,7 +56,6 @@
 63C:\ResturangHemsida\node_modules\@swc\helpers\cjs\_ts_param.cjs133606297021697191 0
 56C:\ResturangHemsida\node_modules\source-map\package.json133606297006017982 0
 34C:\ResturangHemsida\src\admin.html133612972403133702 0
-53C:\ResturangHemsida\dist\ResturangHemsida.59712999.js133612973071658140 0
 85C:\ResturangHemsida\node_modules\@swc\helpers\_\_class_private_field_get\package.json133606297026803083 0
 67C:\ResturangHemsida\node_modules\@parcel\core\src\serializerCore.js133606297024682728 0
 60C:\ResturangHemsida\node_modules\source-map\lib\array-set.js133606297010550241 0
@@ -68,8 +66,8 @@
 30C:\ResturangHemsida\.gitignore133606308441189873 0
 53C:\ResturangHemsida\node_modules\lightningcss\LICENSE133606297006313017 0
 72C:\ResturangHemsida\node_modules\svgo\plugins\convertOneStopGradients.js133606297019191762 0
+54C:\ResturangHemsida\dist\burgers-7960_512.18e4fcdc.gif133612974295088537 0
 74C:\ResturangHemsida\node_modules\@parcel\core\test\fixtures\custom-targets133606297026112971 1
-54C:\ResturangHemsida\dist\burgers-7960_512.18e4fcdc.gif133612973070777989 0
 64C:\ResturangHemsida\node_modules\caniuse-lite\data\regions\BY.js133606297021767199 0
 84C:\ResturangHemsida\node_modules\caniuse-lite\data\features\getboundingclientrect.js133606297030068661 0
 52C:\ResturangHemsida\node_modules\tslib\tslib.es6.mjs133606297012610620 0
@@ -83,9 +81,9 @@
 68C:\ResturangHemsida\node_modules\@parcel\runtime-js\src\JSRuntime.js133606297016966363 0
 64C:\ResturangHemsida\node_modules\caniuse-lite\data\regions\BF.js133606297020046910 0
 63C:\ResturangHemsida\node_modules\mdn-data\css\types.schema.json133606297016056204 0
+43C:\ResturangHemsida\dist\login.3b8dadd9.css133612974294898515 0
 75C:\ResturangHemsida\node_modules\.bin\node-gyp-build-optional-packages-test133606297037985041 0
 102C:\ResturangHemsida\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\css\syntaxes.schema.json133606297015721151 0
-43C:\ResturangHemsida\dist\login.3b8dadd9.css133612973070777989 0
 76C:\ResturangHemsida\node_modules\caniuse-lite\data\features\pad-start-end.js133606297033944318 0
 76C:\ResturangHemsida\node_modules\@babel\highlight\node_modules\color-convert133606297011230366 1
 97C:\ResturangHemsida\node_modules\@parcel\workers\test\integration\workerfarm\master-process-id.js133606297015881208 0
@@ -96,25 +94,21 @@
 64C:\ResturangHemsida\node_modules\caniuse-lite\data\regions\CK.js133606297022717357 0
 58C:\ResturangHemsida\node_modules\svgo\dist\svgo.browser.js133606297015306090 0
 37C:\ResturangHemsida\node_modules\.bin133606297037975040 1
+46C:\ResturangHemsida\dist\signburg.753ba2dc.jpg133612974295143552 0
 52C:\ResturangHemsida\node_modules\env-paths\readme.md133606297009280030 0
-46C:\ResturangHemsida\dist\signburg.753ba2dc.jpg133612973070803017 0
 105C:\ResturangHemsida\node_modules\@parcel\optimizer-svgo\node_modules\mdn-data\api\inheritance.schema.json133606297013525763 0
 51C:\ResturangHemsida\node_modules\msgpackr\stream.js133606297016982242 0
 81C:\ResturangHemsida\node_modules\css-select\node_modules\entities\lib\encode.d.ts133606297020116920 0
 84C:\ResturangHemsida\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.c133606297018096593 0
 63C:\ResturangHemsida\node_modules\css-what\lib\es\stringify.d.ts133606297015731158 0
-47C:\ResturangHemsida\dist\login.3b8dadd9.css.map133612973070843017 0
 59C:\ResturangHemsida\node_modules\source-map\source-map.d.ts133606297014165879 0
 115C:\ResturangHemsida\node_modules\@parcel\optimizer-htmlnano\node_modules\svgo\plugins\removeAttributesBySelector.js133606297017906527 0
 71C:\ResturangHemsida\node_modules\@parcel\transformer-babel\package.json133606297015136058 0
 52C:\ResturangHemsida\node_modules\weak-lru-cache\dist133606297006162999 1
 104C:\ResturangHemsida\node_modules\@parcel\workers\test\integration\workerfarm\resolve-shared-reference.js133606297016826337 0
 55C:\ResturangHemsida\node_modules\supports-color\license133606297006162999 0
-35C:\ResturangHemsida\dist\index.html133612973071023049 0
 79C:\ResturangHemsida\node_modules\lmdb\node_modules\node-addon-api\noexcept.gypi133606297009950125 0
 81C:\ResturangHemsida\node_modules\@swc\helpers\src\_object_destructuring_empty.mjs133606297030818787 0
-47C:\ResturangHemsida\dist\index.ff312cca.css.map133612973071028036 0
-42C:\ResturangHemsida\dist\login.355e69e6.js133612973071093041 0
 59C:\ResturangHemsida\node_modules\utility-types\package.json133606297011300392 0
 85C:\ResturangHemsida\node_modules\csso\node_modules\css-tree\cjs\syntax\node\Ratio.cjs133606297022317298 0
 83C:\ResturangHemsida\node_modules\csso\node_modules\css-tree\lib\convertor\create.js133606297024652711 0
@@ -124,7 +118,7 @@
 53C:\ResturangHemsida\node_modules\@swc\core\binding.js133606297013135681 0
 38C:\ResturangHemsida\node_modules\tslib133606297013565792 1
 88C:\ResturangHemsida\node_modules\lmdb\dependencies\lz4\lib\dll\example\fullbench-dll.sln133606297024787729 0
-42C:\ResturangHemsida\dist\login.795b4621.js133612973071098041 0
+42C:\ResturangHemsida\dist\login.795b4621.js133612974294963526 0
 65C:\ResturangHemsida\node_modules\sass\types\legacy\exception.d.ts133606297022457319 0
 55C:\ResturangHemsida\node_modules\semver\functions\lt.js133606297015261066 0
 104C:\ResturangHemsida\node_modules\@parcel\optimizer-svgo\node_modules\css-tree\lib\syntax\atrule\media.js133606297021617210 0
@@ -136,7 +130,7 @@
 87C:\ResturangHemsida\node_modules\@parcel\runtime-browser-hmr\lib\loaders\hmr-runtime.js133606297008469910 0
 41C:\ResturangHemsida\node_modules\escalade133606297011625429 1
 80C:\ResturangHemsida\node_modules\caniuse-lite\data\features\rtcpeerconnection.js133606297034624452 0
-46C:\ResturangHemsida\dist\login.355e69e6.js.map133612973071128044 0
+46C:\ResturangHemsida\dist\login.355e69e6.js.map133612974295023523 0
 57C:\ResturangHemsida\node_modules\css-select\lib\sort.d.ts133606297021697191 0
 78C:\ResturangHemsida\node_modules\caniuse-lite\data\features\async-clipboard.js133606297017341436 0
 67C:\ResturangHemsida\node_modules\utility-types\dist\mapped-types.js133606297010365216 0
@@ -146,16 +140,14 @@
 52C:\ResturangHemsida\node_modules\type-fest\readme.md133606297008909959 0
 32C:\ResturangHemsida\node_modules133606297044218875 1
 67C:\ResturangHemsida\node_modules\cosmiconfig\dist\ExplorerSync.d.ts133606297018456623 0
+46C:\ResturangHemsida\dist\login.795b4621.js.map133612974295023523 0
 96C:\ResturangHemsida\node_modules\@parcel\optimizer-svgo\node_modules\svgo\plugins\removeAttrs.js133606297017982357 0
 55C:\ResturangHemsida\node_modules\term-size\package.json133606297011805454 0
-46C:\ResturangHemsida\dist\login.795b4621.js.map133612973071128044 0
 43C:\ResturangHemsida\node_modules\nullthrows133606297010630282 1
-49C:\ResturangHemsida\dist\whiteBricks.749609bf.jpg133612973071608131 0
 54C:\ResturangHemsida\node_modules\domutils\lib\index.js133606297009595073 0
 59C:\ResturangHemsida\node_modules\@lezer\common\package.json133606297011740452 0
 53C:\ResturangHemsida\node_modules\postcss-value-parser133606297011670436 1
 71C:\ResturangHemsida\node_modules\caniuse-lite\data\features\temporal.js133606297035599632 0
-42C:\ResturangHemsida\dist\index.de158e3a.js133612973071658140 0
 37C:\ResturangHemsida\node_modules\@swc133606297042283535 1
 42C:\ResturangHemsida\node_modules\lmdb\dist133606297024447682 1
 84C:\ResturangHemsida\node_modules\@swc\helpers\src\_tagged_template_literal_loose.mjs133606297031083829 0
@@ -163,16 +155,14 @@
 41C:\ResturangHemsida\node_modules\posthtml133606297010600257 1
 52C:\ResturangHemsida\node_modules\msgpackr\index.d.ts133606297020987071 0
 87C:\ResturangHemsida\node_modules\csso\node_modules\css-tree\cjs\syntax\config\lexer.cjs133606297020536997 0
-46C:\ResturangHemsida\dist\index.de158e3a.js.map133612973071688163 0
 83C:\ResturangHemsida\node_modules\htmlnano\lib\modules\collapseBooleanAttributes.mjs133606297021087097 0
 52C:\ResturangHemsida\node_modules\has-flag\index.d.ts133606297006733110 0
 31C:\ResturangHemsida\src\main.js133612959159165752 0
 64C:\ResturangHemsida\node_modules\caniuse-lite\data\regions\KN.js133606297032169053 0
+35C:\ResturangHemsida\dist\login.html133612974355019614 0
 66C:\ResturangHemsida\node_modules\htmlparser2\lib\WritableStream.js133606297011185343 0
-35C:\ResturangHemsida\dist\login.html133612973071821206 0
 66C:\ResturangHemsida\node_modules\@swc\helpers\src\_export_star.mjs133606297030484453 0
 63C:\ResturangHemsida\node_modules\css-what\lib\es\index.d.ts.map133606297013260719 0
-57C:\ResturangHemsida\dist\ResturangHemsida.59712999.js.map133612973071693144 0
 67C:\ResturangHemsida\node_modules\css-tree\lib\syntax\scope\value.js133606297027773272 0
 37C:\ResturangHemsida\node_modules\sass133606297021902251 1
 108C:\ResturangHemsida\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\function\var.js133606297024132616 0
@@ -196,7 +186,7 @@
 60C:\ResturangHemsida\node_modules\sass\types\value\index.d.ts133606297022877401 0
 87C:\ResturangHemsida\node_modules\csso\node_modules\css-tree\lib\lexer\generic-urange.js133606297025567867 0
 87C:\ResturangHemsida\node_modules\css-select\node_modules\domutils\lib\esm\querying.d.ts133606297019776859 0
-34C:\ResturangHemsida\src\login.html133612970386231191 0
+34C:\ResturangHemsida\src\login.html133612974353254296 0
 75C:\ResturangHemsida\node_modules\css-tree\lib\tokenizer\OffsetToLocation.js133606297026778110 0
 59C:\ResturangHemsida\node_modules\csso\node_modules\mdn-data133606297016696320 1
 32C:\ResturangHemsida\src\partials133612420999046724 1
@@ -705,6 +695,7 @@
 72C:\ResturangHemsida\node_modules\lmdb\node_modules\node-addon-api\napi.h133606297013125694 0
 75C:\ResturangHemsida\node_modules\entities\lib\generated\decode-data-html.js133606297009990144 0
 39C:\ResturangHemsida\node_modules\stable133606297009725094 1
+46C:\ResturangHemsida\dist\admin.0e74c27c.js.map133612974294933500 0
 107C:\ResturangHemsida\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\atrule\page.js133606297022617355 0
 61C:\ResturangHemsida\node_modules\posthtml-parser\package.json133606297010290200 0
 62C:\ResturangHemsida\node_modules\weak-lru-cache\LRFUExpirer.js133606297009695092 0
@@ -6051,3 +6042,17 @@
 46C:\ResturangHemsida\node_modules\.bin\svgo.cmd133606297037990042 0
 60C:\ResturangHemsida\node_modules\.bin\update-browserslist-db133606297037995041 0
 64C:\ResturangHemsida\node_modules\.bin\update-browserslist-db.ps1133606297037990042 0
+42C:\ResturangHemsida\dist\index.de158e3a.js133612974294843584 0
+42C:\ResturangHemsida\dist\admin.861e015c.js133612974294863479 0
+42C:\ResturangHemsida\dist\admin.0e74c27c.js133612974294863479 0
+53C:\ResturangHemsida\dist\ResturangHemsida.59712999.js133612974294863479 0
+35C:\ResturangHemsida\dist\index.html133612974294898515 0
+43C:\ResturangHemsida\dist\index.ff312cca.css133612974294913499 0
+46C:\ResturangHemsida\dist\index.de158e3a.js.map133612974294923498 0
+46C:\ResturangHemsida\dist\admin.861e015c.js.map133612974294933500 0
+57C:\ResturangHemsida\dist\ResturangHemsida.59712999.js.map133612974294963526 0
+42C:\ResturangHemsida\dist\login.355e69e6.js133612974294968516 0
+47C:\ResturangHemsida\dist\login.3b8dadd9.css.map133612974294988531 0
+47C:\ResturangHemsida\dist\index.ff312cca.css.map133612974294993515 0
+49C:\ResturangHemsida\dist\whiteBricks.749609bf.jpg133612974295178546 0
+35C:\ResturangHemsida\dist\admin.html133612974295413147 0
