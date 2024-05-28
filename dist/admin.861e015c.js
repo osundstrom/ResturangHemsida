@@ -1,5 +1,9 @@
 let url = "https://projektdt207-1.onrender.com/api"; //sätter url till render länk
 //let url = "http://localhost:3000/api"
+let adminLock = document.getElementById("adminLock");
+adminLock.addEventListener("click", function() {
+    deleteToken();
+});
 function deleteToken() {
     console.log("deletedToken");
     localStorage.removeItem("token"); //radera token

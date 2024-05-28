@@ -210,8 +210,7 @@ body {
 
 #pos1 li {
   text-align: left;
-  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
-  color: #000;
+  color: #fff;
   width: 50vw;
   margin-right: 1vw;
   font-size: 90%;
@@ -220,8 +219,7 @@ body {
 }
 
 #pos1 h1 {
-  color: #000;
-  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
+  color: #fff;
   text-align: center;
   text-decoration: underline;
 }
@@ -233,8 +231,7 @@ body {
 }
 
 #pos1 p {
-  text-shadow: -1px -1px #fff, 1px -1px #fff, -1px 1px #fff, 1px 1px #fff;
-  color: #000;
+  color: #fff;
   font-size: 90%;
 }
 

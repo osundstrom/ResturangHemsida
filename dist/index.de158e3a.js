@@ -84,6 +84,12 @@ async function saveBooking() {
         numberGuests: tableData,
         bookDate: bookDateData
     };
+    if (!emailInput.value || !phoneInput.value || !firstNameInput.value || !lastNameInput.value || !tableInput.value || !bookDateInput.value) {
+        divMessage.textContent = "Fyll i samtliga f\xe4lt";
+        divMessage.style.display = "block";
+        divMessage.style.backgroundColor = "red";
+        return;
+    }
     try {
         const respone = await fetch(url + "/booking", {
             method: "POST",
@@ -95,6 +101,7 @@ async function saveBooking() {
         if (respone.ok) {
             divMessage.textContent = "Tack f\xf6r din bokning"; //skriver ut
             divMessage.style.display = "block";
+            divMessage.style.backgroundColor = "green";
             //renser alla 
             emailInput.value = "";
             phoneInput.value = "";

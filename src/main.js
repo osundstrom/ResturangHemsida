@@ -124,6 +124,13 @@ async function saveBooking() { //funktion för att spara en bokning
         bookDate: bookDateData 
     };
 
+    if (!emailInput.value ||!phoneInput.value ||!firstNameInput.value ||!lastNameInput.value ||!tableInput.value ||!bookDateInput.value) {
+        divMessage.textContent ="Fyll i samtliga fält";
+        divMessage.style.display = "block";
+        divMessage.style.backgroundColor = "red";
+        return
+    }
+
     try {
         const respone = await fetch(url + "/booking", { //fetahcer /booking med Post förfrågan
             method: "POST",
@@ -134,9 +141,11 @@ async function saveBooking() { //funktion för att spara en bokning
             body: JSON.stringify(bookingData) //till string
         })
 
+
         if(respone.ok) { //om responsen är ok
             divMessage.textContent = "Tack för din bokning"; //skriver ut
             divMessage.style.display ="block";
+            divMessage.style.backgroundColor = "green";
 
             //renser alla 
             emailInput.value = "";

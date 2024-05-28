@@ -6,7 +6,7 @@ body {
     background-color: rgb(0, 0, 0);
     overflow-x: hidden;
     margin-left: -1vw;
-    font-family: "Pacifico", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    //font-family: "Pacifico", cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-family: "Poetsen One", sans-serif;
     
 }
@@ -41,16 +41,16 @@ body {
             width: 50vw;
             font-size: 90%;
             text-align: left;
-            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
-            color: #000;
+            //text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+            color: #ffffff;
              
             
             
         }
        
         h1{
-            color: rgb(0, 0, 0);
-            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+            color: rgb(255, 255, 255);
+            //text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
             text-decoration: underline;
             text-align: center;
             
@@ -66,8 +66,8 @@ body {
 
         p{
             font-size: 90%; 
-            text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
-            color: #000;
+            //text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #ffffff, -1px  1px 0 #ffffff, 1px  1px 0 #ffffff;
+            color: #ffffff;
             
         }
     }
